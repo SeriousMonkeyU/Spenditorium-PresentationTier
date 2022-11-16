@@ -1,0 +1,53 @@
+﻿@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@using global::Shared.DTO
+@using HttpClient.Implementations
+
+@inject NavigationManager Navigation
+@inject SignOutSessionStateManager SignOutManager
+
+<AuthorizeView>
+    <Authorized>
+        Hello, @context.User.Identity?.Name!
+        <button class="nav-link btn btn-link" @onclick="BeginSignOut">Log out</button>
+    </Authorized>
+    <NotAuthorized>
+        <label for="username">@error</label>
+        <input type="text" id="username" name="password" @bind="Username" @oninput="@((e) => { Username = (string)e.Value; })" required><br>
+        <input type="password" id="password" name="password" @bind="Password" @oninput="@((e) => { Password = (string)e.Value; })" required><br>
+        <button id="login" @onclick="SendLogin" class="loginBtn" IsToggle="false">hhh</button>
+    </NotAuthorized>
+</AuthorizeView>
+        <button id="2" @onclick="SendLogin" class="loginBtn" IsToggle="false">hhh</button>
+
+@code{
+
+    private string error = "";
+    
+    private string Username { get; set; } = "";
+    private string Password { get; set; } = "";
+
+    private async Task SendLogin()
+    {
+        HttpClient httpClient = new HttpClient();
+        ClientHttpClient clientCreation = new ClientHttpClient(httpClient);
+
+        bool tempAnswer = await clientCreation.Login(Username, Password);
+
+        if (!tempAnswer)
+        {
+            error = "You are not logged in!";
+        }
+        
+        //if(tempAnswer)
+            Navigation.NavigateTo($"/");
+
+    }
+    
+    private async Task BeginSignOut(MouseEventArgs args)
+    {
+        await SignOutManager.SetSignOutState();
+        Navigation.NavigateTo("authentication/logout");
+    }
+
+}

@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "Is3vhShzBbJLWN1tzedyCR0RpxfqTPZCn9JqngVY0E11xwus3GAbyhoBpB0b7Kbg3aPieRlAyJmyWo7Tnai3rg==",
+  "success": true,
+  "projectFilePath": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\Client_Tier1\\Shared\\Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\berab\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.11\\microsoft.aspnetcore.authorization.6.0.11.nupkg.sha512",
+    "C:\\Users\\berab\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.11\\microsoft.aspnetcore.components.6.0.11.nupkg.sha512",
+    "C:\\Users\\berab\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\6.0.11\\microsoft.aspnetcore.components.analyzers.6.0.11.nupkg.sha512",
+    "C:\\Users\\berab\\.nuget\\packages\\microsoft.aspnetcore.components.authorization\\6.0.11\\microsoft.aspnetcore.components.authorization.6.0.11.nupkg.sha512",
+    "C:\\Users\\berab\\.nuget\\packages\\microsoft.aspnetcore.metadata\\6.0.11\\microsoft.aspnetcore.metadata.6.0.11.nupkg.sha512",
+    "C:\\Users\\berab\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\berab\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.3\\microsoft.extensions.logging.abstractions.6.0.3.nupkg.sha512",
+    "C:\\Users\\berab\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\berab\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\berab\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

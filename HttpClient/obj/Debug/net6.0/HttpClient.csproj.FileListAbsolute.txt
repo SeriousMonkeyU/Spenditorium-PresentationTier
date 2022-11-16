@@ -1,0 +1,15 @@
+C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\HttpClient\bin\Debug\net6.0\HttpClient.deps.json
+C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\HttpClient\bin\Debug\net6.0\HttpClient.dll
+C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\HttpClient\bin\Debug\net6.0\HttpClient.pdb
+C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\HttpClient\bin\Debug\net6.0\Shared.dll
+C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\HttpClient\bin\Debug\net6.0\Shared.pdb
+C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\HttpClient\obj\Debug\net6.0\HttpClient.csproj.AssemblyReference.cache
+C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\HttpClient\obj\Debug\net6.0\HttpClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\HttpClient\obj\Debug\net6.0\HttpClient.AssemblyInfoInputs.cache
+C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\HttpClient\obj\Debug\net6.0\HttpClient.AssemblyInfo.cs
+C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\HttpClient\obj\Debug\net6.0\HttpClient.csproj.CoreCompileInputs.cache
+C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\HttpClient\obj\Debug\net6.0\HttpClient.csproj.CopyComplete
+C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\HttpClient\obj\Debug\net6.0\HttpClient.dll
+C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\HttpClient\obj\Debug\net6.0\refint\HttpClient.dll
+C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\HttpClient\obj\Debug\net6.0\HttpClient.pdb
+C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\HttpClient\obj\Debug\net6.0\ref\HttpClient.dll
