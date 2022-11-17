@@ -1,0 +1,16 @@
+.mainHolder
+{
+
+    margin: 5% 10% 10%;
+    text-align: center;
+    vertical-align: top;
+    border-width: 4px;
+    border-color: #274C77;
+    border-style: inset;
+}
+
+.inlineBackground
+{
+    padding: 5% 10% 10%;
+    background-color: #E7ECEF;
+}
