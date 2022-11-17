@@ -838,3 +838,4 @@ C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\Client_Tier1\o
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\Client_Tier1\obj\Debug\net6.0\build-gz\3Lq1nkVy.gz
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\Client_Tier1\obj\Debug\net6.0\build-gz\OiSHA2Ln.gz
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\Client_Tier1\obj\Debug\net6.0\scopedcss\Shared\LoginDisplay.razor.rz.scp.css
+C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\Client_Tier1\obj\Debug\net6.0\scopedcss\Pages\Register.razor.rz.scp.css

@@ -15,10 +15,10 @@
         <label for="username">@error</label>
         <input type="text" id="username" name="password" @bind="Username" @oninput="@((e) => { Username = (string)e.Value; })" required><br>
         <input type="password" id="password" name="password" @bind="Password" @oninput="@((e) => { Password = (string)e.Value; })" required><br>
-        <button id="login" @onclick="SendLogin" class="loginBtn" IsToggle="false">hhh</button>
+        <button id="login" @onclick="SendLogin" class="loginBtn" IsToggle="false">Login</button>
+        <button id="login" @onclick="RedirectRegister" class="loginBtn" IsToggle="false">Sign Up</button>
     </NotAuthorized>
 </AuthorizeView>
-        <button id="2" @onclick="SendLogin" class="loginBtn" IsToggle="false">hhh</button>
 
 @code{
 
@@ -42,6 +42,11 @@
         //if(tempAnswer)
             Navigation.NavigateTo($"/");
 
+    }
+
+    private void RedirectRegister()
+    {
+        Navigation.NavigateTo($"/authentication/register");
     }
     
     private async Task BeginSignOut(MouseEventArgs args)
