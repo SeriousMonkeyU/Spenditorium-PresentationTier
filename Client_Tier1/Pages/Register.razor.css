@@ -1,16 +1,55 @@
 .mainHolder
 {
-
-    margin: 5% 10% 10%;
+    padding: 2rem 4rem 4rem;
+    margin: 1rem 10% 10%;
     text-align: center;
     vertical-align: top;
-    border-width: 4px;
+    border-width: 1rem;
     border-color: #274C77;
     border-style: inset;
+    background-color: #E7ECEF;
+    height: 25rem;
 }
 
-.inlineBackground
+.space
 {
-    padding: 5% 10% 10%;
-    background-color: #E7ECEF;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width: auto;
+}
+
+.split
+{
+    height: 23rem;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 6.61rem;
+    overflow-x: hidden;
+}
+
+.leftAlignment
+{
+    left: 0;
+    border-right-style: inherit;
+    border-right-width: 5px;
+    border-color: #A3CEF1;
+    text-align: right;
+}
+.rightAlignment
+{
+    right: 0;
+    text-align: left;
+}
+
+ul
+{
+    padding-top: 2rem;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+li
+{
+    margin-bottom: 1%;
 }

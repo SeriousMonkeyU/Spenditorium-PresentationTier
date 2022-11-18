@@ -13,11 +13,16 @@ public class ClientCreation
     public ClientCreation(string username, string password, string fullName, string email, DateTime dob,
         long phoneNumber)
     {
-        this.Username = username;
-        this.Password = password;
-        this.FullName = fullName;
-        this.Email = email;
-        this.DOB = dob;
-        this.PhoneNumber = phoneNumber;
+        Username = username;
+        Password = password;
+        FullName = fullName;
+        Email = email;
+        DOB = dob;
+        PhoneNumber = phoneNumber;
+    }
+
+    public override String ToString()
+    {
+        return Username + " " + Password + " " + FullName + " " + Email + " " + DOB + " " + PhoneNumber;
     }
 }

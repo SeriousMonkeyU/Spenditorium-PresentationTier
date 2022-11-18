@@ -1,21 +1,64 @@
 /* /Pages/Register.razor.rz.scp.css */
 .mainHolder[b-5t8cvge0o1]
 {
-
-    margin: 5% 10%;
+    padding: 2rem 4rem 4rem;
+    margin: 1rem 10% 10%;
     text-align: center;
     vertical-align: top;
-    border-width: 4px;
+    border-width: 1rem;
     border-color: #274C77;
     border-style: inset;
+    background-color: #E7ECEF;
+    height: 25rem;
 }
 
-.inlineBackground[b-5t8cvge0o1]
+.space[b-5t8cvge0o1]
 {
-    padding: 5% 10% 10%;
-    background-color: #E7ECEF;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width: auto;
+}
+
+.split[b-5t8cvge0o1]
+{
+    height: 23rem;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 6.61rem;
+    overflow-x: hidden;
+}
+
+.leftAlignment[b-5t8cvge0o1]
+{
+    left: 0;
+    border-right-style: inherit;
+    border-right-width: 5px;
+    border-color: #A3CEF1;
+    text-align: right;
+}
+.rightAlignment[b-5t8cvge0o1]
+{
+    right: 0;
+    text-align: left;
+}
+
+ul[b-5t8cvge0o1]
+{
+    padding-top: 2rem;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+li[b-5t8cvge0o1]
+{
+    margin-bottom: 1%;
 }
 /* /Shared/LoginDisplay.razor.rz.scp.css */
+.space[b-ijgv2nuybc]
+{
+    padding-right: 1rem;
+}
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-e1ogp90w9a] {
     position: relative;
@@ -25,10 +68,11 @@
 
 main[b-e1ogp90w9a] {
     flex: 1;
+    background-color: #8B8C89;
 }
 
 .sidebar[b-e1ogp90w9a] {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    
 }
 
 .top-row[b-e1ogp90w9a] {

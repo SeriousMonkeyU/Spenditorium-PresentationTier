@@ -8,8 +8,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpClient", "HttpClient\Ht
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{F89762BE-7B30-407F-9850-F1DB00BC5E46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{9BE8B4C0-671D-48E3-A7F5-BF8992A0C2FB}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,9 +30,5 @@ Global
 		{F89762BE-7B30-407F-9850-F1DB00BC5E46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F89762BE-7B30-407F-9850-F1DB00BC5E46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F89762BE-7B30-407F-9850-F1DB00BC5E46}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9BE8B4C0-671D-48E3-A7F5-BF8992A0C2FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9BE8B4C0-671D-48E3-A7F5-BF8992A0C2FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9BE8B4C0-671D-48E3-A7F5-BF8992A0C2FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9BE8B4C0-671D-48E3-A7F5-BF8992A0C2FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
