@@ -1,6 +1,7 @@
 using HttpClient.IClientService;
 using Shared.DTO;
 using System.Net.Http;
+using System.Security.AccessControl;
 using System.Text;
 using System.Text.Json;
 using Shared.Models;
@@ -31,7 +32,9 @@ public class ClientHttpClient : IClientHttpServices
         {
             throw new Exception(response.ToString());
         }
+        
         string result = await response.Content.ReadAsStringAsync();
+        Console.WriteLine(result);
         Client client = JsonSerializer.Deserialize<Client>(result, new JsonSerializerOptions
         {
             PropertyNameCaseInsensitive = true
@@ -59,5 +62,10 @@ public class ClientHttpClient : IClientHttpServices
             PropertyNameCaseInsensitive = true
         })!;
         return temp;
+    }
+
+    public override string ToString()
+    {
+        return _httpClient.ToString();
     }
 }

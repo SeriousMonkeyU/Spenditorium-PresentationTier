@@ -11,30 +11,61 @@
 
 @inject NavigationManager Nav;
 <div class="mainHolder">
-    <div class="inlineBackground">
-        <label for="fName">Full name: </label>
-        <input type="text" id="fName" name="fullName" @bind="FName" @oninput="@((e) => { FName = (string)e.Value; })"><br>
-        <div class="space"></div>
-        <label for="email">Email: </label>
-        <input type="text" id="email" name="email" @bind="Email" @oninput="@((e) => { Email = (string)e.Value; })"><br>
-        <div class="space"></div>
-        <label for="dob">Date of Birth: </label>
-        <input type="date" id="dob" name="dob" @bind="Dob" @oninput="@((e) => { Dob = (DateTime)e.Value; })"><br>
-        <div class="space"></div>
-        <label for="phone"></label>
-        <input type="text" id="phone" name="phoneNumber" @bind="Pn" @oninput="@((e) => { Pn = (long)e.Value; })"><br>
-        <label for="username">Username: </label>
-        <input type="text" id="username" name="username" minlength="3" @bind="Username" @oninput="@((e) => { Username = (string)e.Value; })" required><br>
-        <div class="space"></div>
-        <label for="password">Password: </label>
-        <input type="password" id="password" name="password" minlength="3" @bind="Password" @oninput="@((e) => { Password = (string)e.Value; })" required><br>
+    <div class="split leftAlignment">
+        <ul style="list-style-type: none;">
+            <li style>
+                <label for="fName">Full name: </label>
+                <div class="space"></div>
+            </li>
+            <li>
+                <label for="email">Email: </label>
+                                <div class="space"></div>
+            </li>
+            <li>
+                <label for="dob">Date of Birth: </label>
+                                <div class="space"></div>
+            </li>
+            <li>
+                <label for="phone">Phone number: </label>
+                                <div class="space"></div>
+            </li>
+            <li>
+                <label for="username">Username: </label>
+                                <div class="space"></div>
+            </li>
+            <li>
+                <label for="password">Password: </label>
+                                <div class="space"></div>
+            </li>
+        </ul>
 
-
+    </div>
+    <div class="split rightAlignment">
+        <ul style="list-style-type: none;">
+            <li>
+                <input type="text" id="fName" name="fullName" @bind="FName" @oninput="@((e) => { FName = (string)e.Value; })"><br>
+            </li>
+            <li>
+                <input type="text" id="email" name="email" @bind="Email" @oninput="@((e) => { Email = (string)e.Value; })"><br>
+            </li>
+            <li>
+                <input type="date" id="dob" name="dob" @bind="Dob" @oninput="@((e) => { Dob = (DateTime)e.Value; })"><br>
+            </li>
+            <li>
+                <input type="text" id="phone" name="phoneNumber" @bind="Pn" @oninput="@((e) => { Pn = (long)e.Value; })"><br>
+            </li>
+            <li>
+                <input type="text" id="username" name="username" minlength="3" @bind="Username" @oninput="@((e) => { Username = (string)e.Value; })" required><br>
+            </li>
+            <li>
+                <input type="password" id="password" name="password" minlength="3" @bind="Password" @oninput="@((e) => { Password = (string)e.Value; })" required><br>
+            </li>
+        </ul>
         <div class="space"></div>
-        <button id="Register" @onclick="TryRegistration" class="Btn" IsToggle="false">Login</button>
+        <button id="Register" @onclick="TryRegistration" class="Btn" IsToggle="false">Register</button>
         <br/>
         <br/>
-        <label for="Register">Error: @ErrorMessage</label>
+        <label for="Register" style="border-width: 2px; border-color: black; color: white; background-color: red">Error: @ErrorMessage</label>
     </div>
 </div>
 
@@ -47,16 +78,18 @@
     private DateTime Dob { get; set; } = new(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
     private long Pn { get; set; } = 11111111;
 
-    private string ErrorMessage { get; set; } = "dumby";
+    private string ErrorMessage { get; set; } = "error, duuh...";
 
 
     private async Task TryRegistration()
     {
-        ErrorMessage = Username + ", " + Password + "." + FName + "." + Email + "." + Dob + "." + Pn + ".";
+        ErrorMessage = Username + " " + Password + " " + FName + " " + Email + " " + Dob + " " + Pn + " ";
         ClientCreation account = new ClientCreation(Username, Password, FName, Email, Dob, Pn);
         HttpClient httpClient = new HttpClient();
         ClientHttpClient clientCreation = new ClientHttpClient(httpClient);
 
+        ErrorMessage = account.ToString();
+        ErrorMessage = clientCreation.ToString();
         await clientCreation.Create(account);
         Nav.NavigateTo($"/Index");
     }
