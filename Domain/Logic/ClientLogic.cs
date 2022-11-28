@@ -23,8 +23,8 @@ public class ClientLogic : IClientLogic
         ValidateData(dto);
         Client toCreate = new Client
         {
-            Username = dto.Username,
-            Password = dto.Password
+            username = dto.username,
+            password = dto.password
         };
 
         Client created = await clientDao.CreateAsync(toCreate);
@@ -34,17 +34,17 @@ public class ClientLogic : IClientLogic
     
     private static void ValidateData(ClientCreation userToCreate)
     {
-        string userName = userToCreate.Username;
-        string password = userToCreate.Password;
+        string userName = userToCreate.username;
+        string password = userToCreate.password;
 
         if (userName.Length < 3)
             throw new Exception("Username must be at least 3 characters!");
 
-        if (userName.Length > 15)
+        if (userName.Length > 16)
             throw new Exception("Username must be less than 16 characters!");
         if (password.Length < 3)
             throw new Exception("Password must be at least 3 characters!");
-        if (password.Length > 20)
+        if (password.Length > 16)
             throw new Exception("Password must be less than 21 characters!");
     }
 }

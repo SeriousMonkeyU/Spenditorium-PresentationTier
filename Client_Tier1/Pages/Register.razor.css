@@ -53,3 +53,9 @@ li
 {
     margin-bottom: 1%;
 }
+
+.error
+{
+    color: red;
+    text-shadow: 2px 1px darkred;
+}

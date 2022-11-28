@@ -62,10 +62,10 @@
             </li>
         </ul>
         <div class="space"></div>
-        <button id="Register" @onclick="TryRegistration" class="Btn" IsToggle="false">Register</button>
+        <button id="Register" @onclick="TryRegistration" class="Btn" IsToggle="false">Sign Up</button>
         <br/>
         <br/>
-        <label for="Register" style="border-width: 2px; border-color: black; color: white; background-color: red">Error: @ErrorMessage</label>
+        <label for="Register" style="border-width: 2px; border-color: black; color: white; background-color: red">@error</label>
     </div>
 </div>
 
@@ -78,20 +78,25 @@
     private DateTime Dob { get; set; } = new(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
     private long Pn { get; set; } = 11111111;
 
-    private string ErrorMessage { get; set; } = "error, duuh...";
+    private string error { get; set; } = "";
 
 
     private async Task TryRegistration()
     {
-        ErrorMessage = Username + " " + Password + " " + FName + " " + Email + " " + Dob + " " + Pn + " ";
-        ClientCreation account = new ClientCreation(Username, Password, FName, Email, Dob, Pn);
-        HttpClient httpClient = new HttpClient();
-        ClientHttpClient clientCreation = new ClientHttpClient(httpClient);
+        if ((Username.Length > 3 && Username.Length < 16) && (Password.Length > 3 && Password.Length < 16) && (FName.Length > 1 && FName.Length < 50) && (Email.Contains("@") && Email.Length > 3 && Email.Length < 50) && (Pn > 9999999 && Pn < 100000000))
+        {
+            ClientCreation account = new ClientCreation(Username, Password, FName, Email, Dob, Pn);
+            HttpClient httpClient = new HttpClient();
+            ClientHttpClient clientCreation = new ClientHttpClient(httpClient);
+            await clientCreation.Create(account);
+            Nav.NavigateTo($"/");
+        }
+        else error = "Invalid Input credentials";
 
-        ErrorMessage = account.ToString();
-        ErrorMessage = clientCreation.ToString();
-        await clientCreation.Create(account);
-        Nav.NavigateTo($"/Index");
+
+
+
+
     }
 
 }
