@@ -1,6 +1,43 @@
 @page "/VliewBills"
-<h3>VliewBills</h3>
+@using Microsoft.AspNetCore.Authorization
+@using global::Shared.Models
+@using global::Shared.DTO
+
+<table class="bills">
+    <thead>
+        <tr>
+            <th>Billing number</th>
+            <th>Billing date</th>
+            <th>Total amount</th>
+            <th>Is payed</th>
+            <th>View</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in bills)
+        {
+            <tr>
+                <td>@item.id</td>
+                <td>@item.billingdate</td>
+                <td>@item.duedate</td>
+                <td>@item.total</td>
+                <td>@item.payedstatus</td>
+                <td><SfIcon Name="IconName.vertical-align-top" Size="IconSize.Small"></SfIcon></td>
+            </tr>
+        }
+    </tbody>
+</table>
 
 @code {
+
+    private List<BillDto> bills;
     
+    protected override void OnInitialized()
+    {
+        bills.Add(new BillDto(1, 1, DateTime.Now, DateTime.Now, 50, 1, "Company Name", true));
+        base.OnInitialized();
+    }
+    
+    
+
 }

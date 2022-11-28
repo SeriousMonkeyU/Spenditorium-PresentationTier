@@ -26,11 +26,6 @@
 
     private async Task SendLogin()
     {
-        HttpClient httpClient = new HttpClient();
-        ClientHttpClient clientCreation = new ClientHttpClient(httpClient);
-        
-        await clientCreation.Login(Username, Password);
-
         if ((Username.Length > 3 && Username.Length < 16) && (Password.Length > 3 && Password.Length < 16))
         {
             error = "";
@@ -38,6 +33,11 @@
 
         }
         else error = "The username or password fields is/are invalid";
+        
+        HttpClient httpClient = new HttpClient();
+        ClientHttpClient clientCreation = new ClientHttpClient(httpClient);
+        
+        await clientCreation.Login(Username, Password); // changes auth state ???
     }
 
     private void RedirectRegister()
