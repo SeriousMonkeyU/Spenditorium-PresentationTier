@@ -75,6 +75,19 @@ li[b-5t8cvge0o1]
     color: red;
     text-shadow: 2px 1px darkred;
 }
+/* /Pages/ViewBills.razor.rz.scp.css */
+.mainHolder[b-54amtem7zk]
+{
+    padding: 2rem 4rem 4rem;
+    margin: 1rem 10% 10%;
+    text-align: center;
+    vertical-align: top;
+    border-width: 1rem;
+    border-color: #274C77;
+    border-style: inset;
+    background-color: #E7ECEF;
+    height: 25rem;
+}
 /* /Shared/LoginDisplay.razor.rz.scp.css */
 .space[b-ijgv2nuybc]
 {

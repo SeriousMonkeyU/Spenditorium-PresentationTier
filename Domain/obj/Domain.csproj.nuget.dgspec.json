@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\Client_Tier1\\Domain\\Domain.csproj": {}
+    "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\Client_Tier1\\Domain\\Domain.csproj": {
+    "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\Client_Tier1\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\Client_Tier1\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\berab\\.nuget\\packages\\",
-        "outputPath": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\Client_Tier1\\Domain\\obj\\",
+        "outputPath": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\berab\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,8 +26,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\Client_Tier1\\Shared\\Shared.csproj": {
-                "projectPath": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\Client_Tier1\\Shared\\Shared.csproj"
+              "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Shared\\Shared.csproj": {
+                "projectPath": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Shared\\Shared.csproj"
               }
             }
           }
@@ -61,14 +61,14 @@
         }
       }
     },
-    "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\Client_Tier1\\Shared\\Shared.csproj": {
+    "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Shared\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\Client_Tier1\\Shared\\Shared.csproj",
+        "projectUniqueName": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Shared\\Shared.csproj",
         "projectName": "Shared",
-        "projectPath": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\Client_Tier1\\Shared\\Shared.csproj",
+        "projectPath": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Shared\\Shared.csproj",
         "packagesPath": "C:\\Users\\berab\\.nuget\\packages\\",
-        "outputPath": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\Client_Tier1\\Shared\\obj\\",
+        "outputPath": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\berab\\AppData\\Roaming\\NuGet\\NuGet.Config"
