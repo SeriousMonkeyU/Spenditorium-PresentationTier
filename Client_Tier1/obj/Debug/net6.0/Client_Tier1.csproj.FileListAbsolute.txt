@@ -840,3 +840,15 @@ C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\Client_Tier1\o
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\Client_Tier1\obj\Debug\net6.0\scopedcss\Shared\LoginDisplay.razor.rz.scp.css
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\Client_Tier1\obj\Debug\net6.0\scopedcss\Pages\Register.razor.rz.scp.css
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\Client_Tier1\obj\Debug\net6.0\scopedcss\Pages\Index.razor.rz.scp.css
+C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\Client_Tier1\bin\Debug\net6.0\wwwroot\_framework\Syncfusion.Blazor.Buttons.dll
+C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\Client_Tier1\bin\Debug\net6.0\wwwroot\_framework\Syncfusion.Blazor.Core.dll
+C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\Client_Tier1\bin\Debug\net6.0\wwwroot\_framework\Syncfusion.Licensing.dll
+C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\Client_Tier1\bin\Debug\net6.0\wwwroot\_framework\Syncfusion.Blazor.Core.dll.gz
+C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\Client_Tier1\bin\Debug\net6.0\wwwroot\_framework\Syncfusion.Blazor.Buttons.dll.gz
+C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\Client_Tier1\bin\Debug\net6.0\wwwroot\_framework\Syncfusion.Licensing.dll.gz
+C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\Client_Tier1\bin\Debug\net6.0\Syncfusion.Blazor.Buttons.dll
+C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\Client_Tier1\bin\Debug\net6.0\Syncfusion.Blazor.Core.dll
+C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\Client_Tier1\bin\Debug\net6.0\Syncfusion.Licensing.dll
+C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\Client_Tier1\obj\Debug\net6.0\build-gz\1Hj1ma3I.gz
+C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\Client_Tier1\obj\Debug\net6.0\build-gz\+O0glKJK.gz
+C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\Client_Tier1\obj\Debug\net6.0\build-gz\eFEtJFZ3.gz

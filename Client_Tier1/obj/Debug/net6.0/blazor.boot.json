@@ -34,6 +34,9 @@
       "Microsoft.Extensions.Primitives.dll": "sha256-jOmoWSfsdQexH\/6QCA56gR1RMEqeix2iDDUBWbpAOQI=",
       "Microsoft.JSInterop.dll": "sha256-8rJkvKxV\/xke9flVSby3wXsdofRAr9AzsMeVjUmVAMo=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-1QozxIvB\/BSiyHOG+DTGKX84WKGJ6RN\/icEJTVaNu+o=",
+      "Syncfusion.Blazor.Buttons.dll": "sha256-lEAhTor9e4NsgS8EO9apkd2DLzsVw8mH7J0ZAcNUWt8=",
+      "Syncfusion.Blazor.Core.dll": "sha256-uGjk40lcrKKSsISNf8rpvmq+q9\/fUY\/nPf3uTbv6rLc=",
+      "Syncfusion.Licensing.dll": "sha256-7U0LCpqQnbykpCvHMcE\/SGwSfSrDK5k8cg13aMt\/\/jw=",
       "System.IO.Pipelines.dll": "sha256-6+E55JXedimdw1c1bDtVg4K7XuWjVWVTifH8QpfzXSY=",
       "Microsoft.CSharp.dll": "sha256-BV\/rFR+iIFuQ+iMFF9+YYxwpZJ91zw5pC6QhTzk3+Rg=",
       "Microsoft.VisualBasic.Core.dll": "sha256-ReVyBChor1eIStClYNO44h\/i4fyPOJxm43xZegD6VXk=",
@@ -201,17 +204,17 @@
       "mscorlib.dll": "sha256-MnMyZHtcymf0sLxXeFBbQZVsdNdxT0GXJaa9t3ZdSek=",
       "netstandard.dll": "sha256-+SGdnDhVMiZ9hq0EsYwJ+mcK0odf3bAtXnSKLorGDCs=",
       "System.Private.CoreLib.dll": "sha256-mqfalNg3wC8XHlyA+j5ioNcnc0kt4prNudKdyJoaYaU=",
-      "HttpClient.dll": "sha256-9V9qAXH4jFjlQJC4+GHctPVf4pXsXJ6XgYQRgTg6MR8=",
-      "Shared.dll": "sha256-8zi9QsExcwYfNKyjAeuEcHT7D3R0ihIExfT8J1l0sJE=",
-      "Client_Tier1.dll": "sha256-cUHdek9ReuS0TU8K7RzHZTsPU9DC8GnRR0y0HQFFZ1A="
+      "HttpClient.dll": "sha256-qTu5m+\/euK0wnATfQbFVlD6opQyPDJxb9+4duus88p8=",
+      "Shared.dll": "sha256-dEqaa+xXa6WCgKKQJ6Rh6hprQ4rWKauEoo\/+pRdWRko=",
+      "Client_Tier1.dll": "sha256-Re32Yead4K+afqA25IiHMNWY4sIOgjSM4tnckCk0JQ8="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "HttpClient.pdb": "sha256-Driko7GdSvmDbleATj\/zuGGXpPvZct8q9nsYqzXEnPc=",
-      "Shared.pdb": "sha256-y3dbFeHLV2zavzAJycj8q00zUuGA8uezwltJV9mxWcI=",
-      "Client_Tier1.pdb": "sha256-W5Uj7ngBrFGqXTJWwfb5RbZnCF7vZffOBXdLtxV0UTQ="
+      "HttpClient.pdb": "sha256-NyE6c0jDEkHFH1ya3Ho18QtmjTLpxnVgaSZVyo1BDvs=",
+      "Shared.pdb": "sha256-z9F1gXxPgFRJXugwMFpgoZi0v2p7050kU+dWMG\/EuWM=",
+      "Client_Tier1.pdb": "sha256-C8qUFiHIUvvzW5gNLqwUtBd3wdRAmPRfr4vam0TpC3U="
     },
     "runtime": {
       "dotnet.6.0.9.ov0t011r8f.js": "sha256-Azk5sbYFVo84h8NpIst9roIPGLH2y8ewQ9SY\/sUHvgs=",
