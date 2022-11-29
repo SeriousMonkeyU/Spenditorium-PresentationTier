@@ -120,6 +120,20 @@ public class ClientHttpClient : IClientHttpServices
         return Convert.FromBase64String(base64);
     }
     
+    public Task<ClaimsPrincipal> GetAuthAsync()
+    {
+        ClaimsPrincipal principal = CreateClaimsPrincipal();
+        return Task.FromResult(principal);
+    }
+    
+    public Task Logout()
+    {
+        Jwt = null;
+        ClaimsPrincipal principal = new();
+        OnAuthStateChanged.Invoke(principal);
+        return Task.CompletedTask;
+    }
+    
     public override string ToString()
     {
         return _httpClient.ToString();
