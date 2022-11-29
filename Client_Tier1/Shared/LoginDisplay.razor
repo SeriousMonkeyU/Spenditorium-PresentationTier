@@ -1,17 +1,18 @@
 ﻿@using Microsoft.AspNetCore.Components.Authorization
 @using Microsoft.AspNetCore.Components.WebAssembly.Authentication
 @using global::Shared.DTO
+@using global::Shared.Models
 @using HttpClient.Implementations
+@using Microsoft.AspNetCore.Components
 
 @inject NavigationManager Navigation
+<label for="loginUsername" class="error">@error</label>
+<div class="space"></div>
+<input type="text" id="loginUsername" name="password" @bind="Username" @oninput="@((e) => { Username = (string)e.Value; })" required placeholder="Username"><br>
+<div class="space"></div>
+<input type="password" id="loginPassword" name="password" @bind="Password" @oninput="@((e) => { Password = (string)e.Value; })" required placeholder="Password"><br>
+<div class="space"></div>
 
-
-<label for="loginUsername">@error</label>
-<div class="space"></div>
-<input type="text" id="loginUsername" name="password" @bind="Username" @oninput="@((e) => { Username = (string)e.Value; })" required><br>
-<div class="space"></div>
-<input type="password" id="loginPassword" name="password" @bind="Password" @oninput="@((e) => { Password = (string)e.Value; })" required><br>
-<div class="space"></div>
 <button id="login" @onclick="SendLogin" class="loginBtn" IsToggle="false">Login</button>
 <div class="space"></div>
 <button id="register" @onclick="RedirectRegister" class="loginBtn" IsToggle="false">Sign Up</button>
@@ -25,22 +26,23 @@
 
     private async Task SendLogin()
     {
+        if ((Username.Length > 3 && Username.Length < 16) && (Password.Length > 3 && Password.Length < 16))
+        {
+            error = "";
+            Navigation.NavigateTo($"/");
+
+        }
+        else error = "The username or password fields is/are invalid";
+        
         HttpClient httpClient = new HttpClient();
         ClientHttpClient clientCreation = new ClientHttpClient(httpClient);
-
-        bool tempAnswer = await clientCreation.Login(Username, Password);
-
-        if (!tempAnswer)
-        {
-            error = "You are not logged in!";
-        }
-
-    //if(tempAnswer)
-        Navigation.NavigateTo($"/");
+        
+        await clientCreation.Login(Username, Password); // changes auth state ???
     }
 
     private void RedirectRegister()
     {
         Navigation.NavigateTo($"/authentication/register");
     }
+
 }

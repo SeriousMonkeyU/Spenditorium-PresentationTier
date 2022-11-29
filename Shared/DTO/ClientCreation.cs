@@ -2,27 +2,27 @@ namespace Shared.DTO;
 
 public class ClientCreation
 {
-    public string Username { get; }
-    public string Password { get; }
+    public string username { get; }
+    public string password { get; }
     
-    public string FullName { get; }
-    public string Email { get; }
-    public DateTime DOB { get; }
-    public long PhoneNumber { get; }
+    public string name { get; }
+    public string email { get; }
+    public DateTime dob { get; }
+    public long phoneNumber { get; }
 
-    public ClientCreation(string username, string password, string fullName, string email, DateTime dob,
+    public ClientCreation(string username, string password, string name, string email, DateTime dob,
         long phoneNumber)
     {
-        Username = username;
-        Password = password;
-        FullName = fullName;
-        Email = email;
-        DOB = dob;
-        PhoneNumber = phoneNumber;
+        this.username = username;
+        this.password = password;
+        this.name = name;
+        this.email = email;
+        this.dob = dob;
+        this.phoneNumber = phoneNumber;
     }
 
     public override String ToString()
     {
-        return Username + " " + Password + " " + FullName + " " + Email + " " + DOB + " " + PhoneNumber;
+        return username + " " + password + " " + name + " " + email + " " + dob + " " + phoneNumber;
     }
 }

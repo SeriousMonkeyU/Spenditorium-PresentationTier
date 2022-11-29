@@ -1,3 +1,18 @@
+/* /Pages/Index.razor.rz.scp.css */
+.mainHolder[b-fv7a5lpsma]
+{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    padding: 10% 10% 25rem;
+    text-align: center;
+    vertical-align: top;
+    border-width: 1rem;
+    border-color: #274C77;
+    border-style: inset;
+    background-color: #E7ECEF;
+    height: 100rem;
+}
 /* /Pages/Register.razor.rz.scp.css */
 .mainHolder[b-5t8cvge0o1]
 {
@@ -54,10 +69,22 @@ li[b-5t8cvge0o1]
 {
     margin-bottom: 1%;
 }
+
+.error[b-5t8cvge0o1]
+{
+    color: red;
+    text-shadow: 2px 1px darkred;
+}
 /* /Shared/LoginDisplay.razor.rz.scp.css */
 .space[b-ijgv2nuybc]
 {
     padding-right: 1rem;
+}
+
+.error[b-ijgv2nuybc]
+{
+    color: red;
+    text-shadow: 2px 1px darkred;
 }
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-e1ogp90w9a] {
@@ -72,9 +99,9 @@ main[b-e1ogp90w9a] {
 }
 
 .sidebar[b-e1ogp90w9a] {
-    
+    background-color: #6096BA;
 }
-
+ 
 .top-row[b-e1ogp90w9a] {
     background-color: #6096BA;
     border-bottom: 1px solid #8B8C89;
