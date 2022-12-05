@@ -474,12 +474,12 @@
           "buildMultiTargeting/Syncfusion.Blazor.Buttons.props": {}
         }
       },
-      "Syncfusion.Blazor.Core/20.3.0.58": {
+      "Syncfusion.Blazor.Core/20.3.0.59": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "6.0.5",
           "Microsoft.CSharp": "4.7.0",
-          "Syncfusion.Licensing": "20.3.0.58",
+          "Syncfusion.Licensing": "20.3.0.59",
           "System.Text.Json": "6.0.0"
         },
         "compile": {
@@ -499,7 +499,7 @@
           "buildMultiTargeting/Syncfusion.Blazor.Core.props": {}
         }
       },
-      "Syncfusion.Licensing/20.3.0.58": {
+      "Syncfusion.Licensing/20.3.0.59": {
         "type": "package",
         "compile": {
           "lib/net6.0/Syncfusion.Licensing.dll": {}
@@ -1104,12 +1104,12 @@
           "buildMultiTargeting/Syncfusion.Blazor.Buttons.props": {}
         }
       },
-      "Syncfusion.Blazor.Core/20.3.0.58": {
+      "Syncfusion.Blazor.Core/20.3.0.59": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "6.0.5",
           "Microsoft.CSharp": "4.7.0",
-          "Syncfusion.Licensing": "20.3.0.58",
+          "Syncfusion.Licensing": "20.3.0.59",
           "System.Text.Json": "6.0.0"
         },
         "compile": {
@@ -1129,7 +1129,7 @@
           "buildMultiTargeting/Syncfusion.Blazor.Core.props": {}
         }
       },
-      "Syncfusion.Licensing/20.3.0.58": {
+      "Syncfusion.Licensing/20.3.0.59": {
         "type": "package",
         "compile": {
           "lib/net6.0/Syncfusion.Licensing.dll": {}
@@ -1988,10 +1988,10 @@
         "syncfusion_logo.png"
       ]
     },
-    "Syncfusion.Blazor.Core/20.3.0.58": {
-      "sha512": "HFCyHut5GdvTGnIt/Uo1p2WBG5n4MRJqNO/giV7GD5wlFm3Is3QzDJZDterSDAb4UrLqCqKF9vV2e01PBddrDQ==",
+    "Syncfusion.Blazor.Core/20.3.0.59": {
+      "sha512": "cUwJzGEhYYloExYbeVB9tAfd0UME56kBKbYKnZHma530pKHaSsAArYNHh1ZrDh40XaGOnVvhhJ9kicaaeaGbUQ==",
       "type": "package",
-      "path": "syncfusion.blazor.core/20.3.0.58",
+      "path": "syncfusion.blazor.core/20.3.0.59",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2015,15 +2015,15 @@
         "staticwebassets/scripts/syncfusion-blazor-base.min.js",
         "staticwebassets/scripts/syncfusion-blazor-extended.min.js",
         "staticwebassets/scripts/syncfusion-blazor.min.js",
-        "syncfusion.blazor.core.20.3.0.58.nupkg.sha512",
+        "syncfusion.blazor.core.20.3.0.59.nupkg.sha512",
         "syncfusion.blazor.core.nuspec",
         "syncfusion_logo.png"
       ]
     },
-    "Syncfusion.Licensing/20.3.0.58": {
-      "sha512": "LiNrQtlfLDVBGPsEuz4tgHR0JnEoUoh/4FdUEM7Txw56C3E241svZZ54VEGamS12OxKiMxPIBvd1ZULym4KcRw==",
+    "Syncfusion.Licensing/20.3.0.59": {
+      "sha512": "x382oKD8fd5LAq/6lF9FeAXWvWBTgV3wXaisGf0uQbGI+uDv1r7Zciq/E5+GtG6/jU7AjPFnfd2AZnCJkU8ioQ==",
       "type": "package",
-      "path": "syncfusion.licensing/20.3.0.58",
+      "path": "syncfusion.licensing/20.3.0.59",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2047,7 +2047,7 @@
         "lib/netstandard2.0/Syncfusion.Licensing.dll",
         "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
         "lib/uap10.0/Syncfusion.Licensing.dll",
-        "syncfusion.licensing.20.3.0.58.nupkg.sha512",
+        "syncfusion.licensing.20.3.0.59.nupkg.sha512",
         "syncfusion.licensing.nuspec",
         "syncfusion_logo.png"
       ]
@@ -2227,7 +2227,8 @@
       "Microsoft.AspNetCore.Components.WebAssembly.Authentication >= 6.0.11",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 6.0.9",
       "Shared >= 1.0.0",
-      "Syncfusion.Blazor.Buttons >= 20.3.0.58"
+      "Syncfusion.Blazor.Buttons >= 20.3.0.58",
+      "Syncfusion.Blazor.Core >= 20.3.0.59"
     ]
   },
   "packageFolders": {
@@ -2236,11 +2237,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\Client_Tier1\\Client_Tier1\\Client_Tier1.csproj",
+      "projectUniqueName": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\Client_Tier1.csproj",
       "projectName": "Client_Tier1",
-      "projectPath": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\Client_Tier1\\Client_Tier1\\Client_Tier1.csproj",
+      "projectPath": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\Client_Tier1.csproj",
       "packagesPath": "C:\\Users\\berab\\.nuget\\packages\\",
-      "outputPath": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\Client_Tier1\\Client_Tier1\\obj\\",
+      "outputPath": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\berab\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -2255,11 +2256,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\Client_Tier1\\HttpClient\\HttpClient.csproj": {
-              "projectPath": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\Client_Tier1\\HttpClient\\HttpClient.csproj"
+            "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\HttpClient\\HttpClient.csproj": {
+              "projectPath": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\HttpClient\\HttpClient.csproj"
             },
-            "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\Client_Tier1\\Shared\\Shared.csproj": {
-              "projectPath": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\Client_Tier1\\Shared\\Shared.csproj"
+            "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Shared\\Shared.csproj": {
+              "projectPath": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Shared\\Shared.csproj"
             }
           }
         }
@@ -2294,6 +2295,10 @@
           "Syncfusion.Blazor.Buttons": {
             "target": "Package",
             "version": "[20.3.0.58, )"
+          },
+          "Syncfusion.Blazor.Core": {
+            "target": "Package",
+            "version": "[20.3.0.59, )"
           }
         },
         "imports": [

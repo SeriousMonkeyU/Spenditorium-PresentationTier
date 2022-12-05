@@ -404,11 +404,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\Client_Tier1\\Shared\\Shared.csproj",
+      "projectUniqueName": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Shared\\Shared.csproj",
       "projectName": "Shared",
-      "projectPath": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\Client_Tier1\\Shared\\Shared.csproj",
+      "projectPath": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Shared\\Shared.csproj",
       "packagesPath": "C:\\Users\\berab\\.nuget\\packages\\",
-      "outputPath": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\Client_Tier1\\Shared\\obj\\",
+      "outputPath": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Shared\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\berab\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -20,11 +20,8 @@
     margin: 1rem 10% 10%;
     text-align: center;
     vertical-align: top;
-    border-width: 1rem;
-    border-color: #274C77;
-    border-style: inset;
-    background-color: #E7ECEF;
-    height: 25rem;
+    background-color: #F1FAEE;
+    height: 60rem;
 }
 
 .space[b-5t8cvge0o1]
@@ -40,17 +37,15 @@
     width: 50%;
     position: fixed;
     z-index: 1;
-    top: 6.61rem;
+    top: 3.1rem;
     overflow-x: hidden;
 }
 
 .leftAlignment[b-5t8cvge0o1]
 {
     left: 0;
-    border-right-style: inherit;
-    border-right-width: 5px;
-    border-color: #A3CEF1;
     text-align: right;
+    width: 50%;
 }
 .rightAlignment[b-5t8cvge0o1]
 {
@@ -75,17 +70,6 @@ li[b-5t8cvge0o1]
     color: red;
     text-shadow: 2px 1px darkred;
 }
-/* /Shared/LoginDisplay.razor.rz.scp.css */
-.space[b-ijgv2nuybc]
-{
-    padding-right: 1rem;
-}
-
-.error[b-ijgv2nuybc]
-{
-    color: red;
-    text-shadow: 2px 1px darkred;
-}
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-e1ogp90w9a] {
     position: relative;
@@ -95,7 +79,7 @@ li[b-5t8cvge0o1]
 
 main[b-e1ogp90w9a] {
     flex: 1;
-    background-color: #8B8C89;
+    background-color: #A8DADC;
 }
 
 .sidebar[b-e1ogp90w9a] {

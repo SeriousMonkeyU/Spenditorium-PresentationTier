@@ -11,49 +11,45 @@ build_property.EnableTrimAnalyzer = true
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = Client_Tier1
 build_property.RootNamespace = Client_Tier1
-build_property.ProjectDir = C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\Client_Tier1\
+build_property.ProjectDir = C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Denmark studies\3rd semester\Spenditorium\GitCode\Client_Tier1\Client_Tier1
+build_property.MSBuildProjectDirectory = C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Denmark studies/3rd semester/Spenditorium/GitCode/Client_Tier1/Client_Tier1/App.razor]
+[C:/Denmark studies/3rd semester/Spenditorium/GitCode/PresentationTier/Client_Tier1/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Denmark studies/3rd semester/Spenditorium/GitCode/Client_Tier1/Client_Tier1/Pages/About.razor]
+[C:/Denmark studies/3rd semester/Spenditorium/GitCode/PresentationTier/Client_Tier1/Pages/About.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Denmark studies/3rd semester/Spenditorium/GitCode/Client_Tier1/Client_Tier1/Pages/VliewBills.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmxpZXdCaWxscy5yYXpvcg==
+[C:/Denmark studies/3rd semester/Spenditorium/GitCode/PresentationTier/Client_Tier1/Pages/ViewBills.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld0JpbGxzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Denmark studies/3rd semester/Spenditorium/GitCode/Client_Tier1/Client_Tier1/Shared/RedirectToLogin.razor]
+[C:/Denmark studies/3rd semester/Spenditorium/GitCode/PresentationTier/Client_Tier1/Shared/RedirectToLogin.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFJlZGlyZWN0VG9Mb2dpbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Denmark studies/3rd semester/Spenditorium/GitCode/Client_Tier1/Client_Tier1/_Imports.razor]
+[C:/Denmark studies/3rd semester/Spenditorium/GitCode/PresentationTier/Client_Tier1/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Denmark studies/3rd semester/Spenditorium/GitCode/Client_Tier1/Client_Tier1/Pages/Index.razor]
+[C:/Denmark studies/3rd semester/Spenditorium/GitCode/PresentationTier/Client_Tier1/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-fv7a5lpsma
 
-[C:/Denmark studies/3rd semester/Spenditorium/GitCode/Client_Tier1/Client_Tier1/Pages/Register.razor]
+[C:/Denmark studies/3rd semester/Spenditorium/GitCode/PresentationTier/Client_Tier1/Pages/Register.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-5t8cvge0o1
 
-[C:/Denmark studies/3rd semester/Spenditorium/GitCode/Client_Tier1/Client_Tier1/Shared/LoginDisplay.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luRGlzcGxheS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-ijgv2nuybc
-
-[C:/Denmark studies/3rd semester/Spenditorium/GitCode/Client_Tier1/Client_Tier1/Shared/MainLayout.razor]
+[C:/Denmark studies/3rd semester/Spenditorium/GitCode/PresentationTier/Client_Tier1/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-e1ogp90w9a
 
-[C:/Denmark studies/3rd semester/Spenditorium/GitCode/Client_Tier1/Client_Tier1/Shared/NavMenu.razor]
+[C:/Denmark studies/3rd semester/Spenditorium/GitCode/PresentationTier/Client_Tier1/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-te5xu9m4o3

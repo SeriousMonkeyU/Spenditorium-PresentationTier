@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KVctKzs9Z1Y7sOIQNlCGY90z20aIU56DSu0gj5MZ5b8Bypmt/SDDyxWYA7Meg9y8hoLXSU05DaI75u9ivO5LHg==",
+  "dgSpecHash": "QborKcOajTPYx26zOdyQuQ+eyzfUOrsHKRzxZblp57BC3EX+3FXp6cYUPLseIAEOFBgPydhTRQsXdz0+whA9Sg==",
   "success": true,
-  "projectFilePath": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\Client_Tier1\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\berab\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.11\\microsoft.aspnetcore.authorization.6.0.11.nupkg.sha512",
     "C:\\Users\\berab\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.11\\microsoft.aspnetcore.components.6.0.11.nupkg.sha512",
