@@ -1,14 +1,9 @@
 .mainHolder
 {
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 10%;
     padding: 10% 10% 25rem;
     text-align: center;
     vertical-align: top;
-    border-width: 1rem;
-    border-color: #274C77;
-    border-style: inset;
-    background-color: #E7ECEF;
+    background-color: #F1FAEE;
     height: 100rem;
+    border-radius: 10px;
 }
