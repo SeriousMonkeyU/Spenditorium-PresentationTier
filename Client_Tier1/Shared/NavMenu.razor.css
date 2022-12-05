@@ -1,14 +1,30 @@
-.navbar-toggler {
-    background-color: rgba(255, 255, 255, 0.1);
+.navbar-header {
+    background: rgb(29,53,87) !important;
+    background: linear-gradient(90deg, rgba(29,53,87,1) 11%, rgba(69,123,157,1) 86%, rgba(69,123,141,1) 99%) !important;
 }
 
-.top-row {
-    height: 3.5rem;
-    background-color: rgba(0,0,0,0.4);
+.navbar-toggler {
+    background-color: #ffffff;
+    width: 50%;
+    margin-bottom: 1rem;
+    margin-left: 25%;
+}
+
+.navbar-holder {
+    background-color: #F1FAEE;
+    border-color: #457B9D;
+    border-style: solid;
+    border-width: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
 }
 
 .navbar-brand {
     font-size: 1.1rem;
+    color: #F1FAEE;
+    text-align: center;
+    padding-top: 5%;
+
 }
 
 .oi {
@@ -32,7 +48,7 @@
     }
 
     .nav-item ::deep a {
-        color: #d7d7d7;
+        color: #457B9D;
         border-radius: 4px;
         height: 3rem;
         display: flex;
@@ -41,22 +57,12 @@
     }
 
 .nav-item ::deep a.active {
-    background-color: rgba(255,255,255,0.25);
-    color: white;
+    background-color: rgba(69, 123, 157, 0.25);
+    color: #1D3557;
 }
 
 .nav-item ::deep a:hover {
-    background-color: rgba(255,255,255,0.1);
-    color: white;
+    background-color: rgba(69, 123, 157, 0.1);
+    color: #1D3557;
 }
 
-@media (min-width: 641px) {
-    .navbar-toggler {
-        display: none;
-    }
-
-    .collapse {
-        /* Never collapse the sidebar for wide screens */
-        display: block;
-    }
-}
