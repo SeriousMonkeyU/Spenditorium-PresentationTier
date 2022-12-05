@@ -1,0 +1,39 @@
+@inject NavigationManager nav;
+
+<img class="icon-client" src="images/client.png" alt="Authorize" onclick="@ToggleNavMenu">
+
+
+<div class="@TopMenuCssClass collapsed-content">
+    <div class="collapsed-components">
+        <p>Username: </p>
+        <input type="text" id="username" name="username">
+        <p>Password: </p>
+        <input type="password" id="password" name="password">
+        <div class="buttons">
+            <button type="button" onclick="@tryLogin">Log In</button>
+            <button type="button" onclick="@redirectRegister">Sign Up</button>
+        </div>
+    </div>
+</div>
+
+@code {
+    private bool collapseAuthorize = true;
+
+    private string? TopMenuCssClass => collapseAuthorize ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseAuthorize = !collapseAuthorize;
+    }
+
+    private void tryLogin()
+    {
+    }
+
+    private void redirectRegister()
+    {
+        ToggleNavMenu();
+        nav.NavigateTo($"/authentication/register");
+    }
+
+}

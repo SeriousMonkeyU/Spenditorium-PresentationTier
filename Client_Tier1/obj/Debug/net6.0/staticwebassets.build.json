@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4QQvSHVLANSbKyf1Dn6PyS1dl+4bpvVSl2q4rMep7no=",
+  "Hash": "W8ClG5VSbAhU6HseERWW9n5KExh3TxiJg7JbH4a7rWs=",
   "Source": "Client_Tier1",
   "BasePath": "/",
   "Mode": "Root",
@@ -7429,12 +7429,12 @@
       "OriginalItemSpec": "wwwroot\\images\\bckg.png"
     },
     {
-      "Identity": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\wwwroot\\images\\bckg1.png",
+      "Identity": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\wwwroot\\images\\client.png",
       "SourceId": "Client_Tier1",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "images/bckg1.png",
+      "RelativePath": "images/client.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -7443,7 +7443,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\bckg1.png"
+      "OriginalItemSpec": "wwwroot\\images\\client.png"
     },
     {
       "Identity": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\wwwroot\\index.html",
