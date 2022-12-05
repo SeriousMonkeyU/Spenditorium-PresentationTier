@@ -73,7 +73,12 @@ li[b-5t8cvge0o1]
     gap:0;
 }
 
-
+.top-row[b-e1ogp90w9a] {
+    padding-top: 0.5rem;
+    text-align: right;
+    position: absolute;
+    right: 3rem;
+}
 
 main[b-e1ogp90w9a] {
     flex: 1;
@@ -137,13 +142,6 @@ main[b-e1ogp90w9a] {
 
 }
 
-.oi[b-te5xu9m4o3] {
-    width: 2rem;
-    font-size: 1.1rem;
-    vertical-align: text-top;
-    top: -2px;
-}
-
 .nav-item[b-te5xu9m4o3] {
     font-size: 0.9rem;
     padding-bottom: 0.5rem;
@@ -176,3 +174,33 @@ main[b-e1ogp90w9a] {
     color: #1D3557;
 }
 
+/* /Shared/TopBar.razor.rz.scp.css */
+.icon-client[b-u8wv99off7] {
+    text-align: right;
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+.collapsed-content[b-u8wv99off7] {
+    position: sticky;
+    width: 20rem;
+}
+
+.collapsed-components[b-u8wv99off7] {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #457B9D;
+    border-radius: 5px;
+    color: white;
+}
+
+.buttons[b-u8wv99off7]
+{
+    padding-top: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

@@ -5,7 +5,12 @@
     gap:0;
 }
 
-
+.top-row {
+    padding-top: 0.5rem;
+    text-align: right;
+    position: absolute;
+    right: 3rem;
+}
 
 main {
     flex: 1;
