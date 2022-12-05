@@ -1,17 +1,12 @@
 /* /Pages/Index.razor.rz.scp.css */
 .mainHolder[b-fv7a5lpsma]
 {
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 10%;
     padding: 10% 10% 25rem;
     text-align: center;
     vertical-align: top;
-    border-width: 1rem;
-    border-color: #274C77;
-    border-style: inset;
-    background-color: #E7ECEF;
+    background-color: #F1FAEE;
     height: 100rem;
+    border-radius: 10px;
 }
 /* /Pages/Register.razor.rz.scp.css */
 .mainHolder[b-5t8cvge0o1]
@@ -75,54 +70,21 @@ li[b-5t8cvge0o1]
     position: relative;
     display: flex;
     flex-direction: column;
+    gap:0;
 }
+
+
 
 main[b-e1ogp90w9a] {
     flex: 1;
     background-color: #A8DADC;
+    gap: 0;
 }
 
 .sidebar[b-e1ogp90w9a] {
-    background-color: #6096BA;
-}
- 
-.top-row[b-e1ogp90w9a] {
-    background-color: #6096BA;
-    border-bottom: 1px solid #8B8C89;
-    justify-content: flex-end;
-    height: 3.5rem;
-    display: flex;
-    align-items: center;
+    margin-right: 0;
 }
 
-    .top-row[b-e1ogp90w9a]  a, .top-row[b-e1ogp90w9a]  .btn-link {
-        white-space: nowrap;
-        margin-left: 1.5rem;
-        text-decoration: none;
-    }
-
-    .top-row[b-e1ogp90w9a]  a:hover, .top-row[b-e1ogp90w9a]  .btn-link:hover {
-        text-decoration: underline;
-    }
-
-    .top-row[b-e1ogp90w9a]  a:first-child {
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-@media (max-width: 640.98px) {
-    .top-row:not(.auth)[b-e1ogp90w9a] {
-        display: none;
-    }
-
-    .top-row.auth[b-e1ogp90w9a] {
-        justify-content: space-between;
-    }
-
-    .top-row[b-e1ogp90w9a]  a, .top-row[b-e1ogp90w9a]  .btn-link {
-        margin-left: 0;
-    }
-}
 
 @media (min-width: 641px) {
     .page[b-e1ogp90w9a] {
@@ -135,36 +97,44 @@ main[b-e1ogp90w9a] {
         position: sticky;
         top: 0;
     }
+    
+}
 
-    .top-row[b-e1ogp90w9a] {
-        position: sticky;
-        top: 0;
-        z-index: 1;
-    }
-
-    .top-row.auth[b-e1ogp90w9a]  a:first-child {
-        flex: 1;
-        text-align: right;
-        width: 0;
-    }
-
-    .top-row[b-e1ogp90w9a], article[b-e1ogp90w9a] {
-        padding-left: 2rem !important;
-        padding-right: 1.5rem !important;
-    }
+.bckg-image[b-e1ogp90w9a] {
+    background-position-y: 12.4rem;
+    background-image: url("./images/bckg.png") !important;
+    background-repeat:no-repeat !important;
+    background-attachment: fixed;
+    background-size: 20rem 65rem;
 }
 /* /Shared/NavMenu.razor.rz.scp.css */
-.navbar-toggler[b-te5xu9m4o3] {
-    background-color: rgba(255, 255, 255, 0.1);
+.navbar-header[b-te5xu9m4o3] {
+    background: rgb(29,53,87) !important;
+    background: linear-gradient(90deg, rgba(29,53,87,1) 11%, rgba(69,123,157,1) 86%, rgba(69,123,141,1) 99%) !important;
 }
 
-.top-row[b-te5xu9m4o3] {
-    height: 3.5rem;
-    background-color: rgba(0,0,0,0.4);
+.navbar-toggler[b-te5xu9m4o3] {
+    background-color: #ffffff;
+    width: 50%;
+    margin-bottom: 1rem;
+    margin-left: 25%;
+}
+
+.navbar-holder[b-te5xu9m4o3] {
+    background-color: #F1FAEE;
+    border-color: #457B9D;
+    border-style: solid;
+    border-width: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
 }
 
 .navbar-brand[b-te5xu9m4o3] {
     font-size: 1.1rem;
+    color: #F1FAEE;
+    text-align: center;
+    padding-top: 5%;
+
 }
 
 .oi[b-te5xu9m4o3] {
@@ -188,7 +158,7 @@ main[b-e1ogp90w9a] {
     }
 
     .nav-item[b-te5xu9m4o3]  a {
-        color: #d7d7d7;
+        color: #457B9D;
         border-radius: 4px;
         height: 3rem;
         display: flex;
@@ -197,22 +167,12 @@ main[b-e1ogp90w9a] {
     }
 
 .nav-item[b-te5xu9m4o3]  a.active {
-    background-color: rgba(255,255,255,0.25);
-    color: white;
+    background-color: rgba(69, 123, 157, 0.25);
+    color: #1D3557;
 }
 
 .nav-item[b-te5xu9m4o3]  a:hover {
-    background-color: rgba(255,255,255,0.1);
-    color: white;
+    background-color: rgba(69, 123, 157, 0.1);
+    color: #1D3557;
 }
 
-@media (min-width: 641px) {
-    .navbar-toggler[b-te5xu9m4o3] {
-        display: none;
-    }
-
-    .collapse[b-te5xu9m4o3] {
-        /* Never collapse the sidebar for wide screens */
-        display: block;
-    }
-}
