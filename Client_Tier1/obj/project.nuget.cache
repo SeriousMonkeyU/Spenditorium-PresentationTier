@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "NNXJjWlFeSQ8DoQ0ynCbHx44uSgtX4/sOFdYkc1Ghz5oUnkRMYywyizW0fSVjOR36zRItLXhLaqhVZuHUWP/KQ==",
+  "dgSpecHash": "BoHy2GMKwD3sAegPnfgKKyDVoA1fv0t5SthiX+k8ZpuS9BzSo6kQ+kRZ+6f3SInzZJj0gkPM21Qlb+8JFTHaJA==",
   "success": true,
   "projectFilePath": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\Client_Tier1.csproj",
   "expectedPackageFiles": [
@@ -32,8 +32,8 @@
     "C:\\Users\\berab\\.nuget\\packages\\microsoft.jsinterop\\6.0.11\\microsoft.jsinterop.6.0.11.nupkg.sha512",
     "C:\\Users\\berab\\.nuget\\packages\\microsoft.jsinterop.webassembly\\6.0.9\\microsoft.jsinterop.webassembly.6.0.9.nupkg.sha512",
     "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.buttons\\20.3.0.58\\syncfusion.blazor.buttons.20.3.0.58.nupkg.sha512",
-    "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.58\\syncfusion.blazor.core.20.3.0.58.nupkg.sha512",
-    "C:\\Users\\berab\\.nuget\\packages\\syncfusion.licensing\\20.3.0.58\\syncfusion.licensing.20.3.0.58.nupkg.sha512",
+    "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.59\\syncfusion.blazor.core.20.3.0.59.nupkg.sha512",
+    "C:\\Users\\berab\\.nuget\\packages\\syncfusion.licensing\\20.3.0.59\\syncfusion.licensing.20.3.0.59.nupkg.sha512",
     "C:\\Users\\berab\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\berab\\.nuget\\packages\\system.io.pipelines\\6.0.3\\system.io.pipelines.6.0.3.nupkg.sha512",
     "C:\\Users\\berab\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",

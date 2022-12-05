@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NzT2t8GxHTgWgO7ABB7hOR6vPi/l5v2TiH4CwZHMljQ=",
+  "Hash": "Ticfj0+WxhHU0LQKda5n0yIwu563DWwVlxFmiEXD+os=",
   "Source": "Client_Tier1",
   "BasePath": "/",
   "Mode": "Root",
@@ -830,7 +830,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.58\\lib\\net6.0\\Syncfusion.Blazor.Core.dll"
+      "OriginalItemSpec": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.59\\lib\\net6.0\\Syncfusion.Blazor.Core.dll"
     },
     {
       "Identity": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Syncfusion.Licensing.dll",
@@ -847,7 +847,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.licensing\\20.3.0.58\\lib\\net6.0\\Syncfusion.Licensing.dll"
+      "OriginalItemSpec": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.licensing\\20.3.0.59\\lib\\net6.0\\Syncfusion.Licensing.dll"
     },
     {
       "Identity": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.AppContext.dll",
@@ -3621,23 +3621,6 @@
       "OriginalItemSpec": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Globalization.Extensions.dll"
     },
     {
-      "Identity": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\obj\\Debug\\net6.0\\build-gz\\+O0glKJK.gz",
-      "SourceId": "Client_Tier1",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Syncfusion.Blazor.Core.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Syncfusion.Blazor.Core.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Syncfusion.Blazor.Core.dll"
-    },
-    {
       "Identity": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\obj\\Debug\\net6.0\\build-gz\\+pw+lKZi.gz",
       "SourceId": "Client_Tier1",
       "SourceType": "Computed",
@@ -3993,6 +3976,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.WebProxy.dll"
+    },
+    {
+      "Identity": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\obj\\Debug\\net6.0\\build-gz\\7D3GirL7.gz",
+      "SourceId": "Client_Tier1",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Syncfusion.Blazor.Core.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Syncfusion.Blazor.Core.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Syncfusion.Blazor.Core.dll"
     },
     {
       "Identity": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\obj\\Debug\\net6.0\\build-gz\\7on3m1uc.gz",
@@ -4537,23 +4537,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.Http.dll"
-    },
-    {
-      "Identity": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\obj\\Debug\\net6.0\\build-gz\\eFEtJFZ3.gz",
-      "SourceId": "Client_Tier1",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Syncfusion.Licensing.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Syncfusion.Licensing.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Syncfusion.Licensing.dll"
     },
     {
       "Identity": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\obj\\Debug\\net6.0\\build-gz\\eiakq+KU.gz",
@@ -5744,6 +5727,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.ValueTuple.dll"
+    },
+    {
+      "Identity": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\obj\\Debug\\net6.0\\build-gz\\noCtmpn7.gz",
+      "SourceId": "Client_Tier1",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Syncfusion.Licensing.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Syncfusion.Licensing.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Syncfusion.Licensing.dll"
     },
     {
       "Identity": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\obj\\Debug\\net6.0\\build-gz\\NtJBo8Ee.gz",
@@ -7497,10 +7497,10 @@
       "OriginalItemSpec": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.buttons\\20.3.0.58\\staticwebassets\\scripts\\sf-speeddial.min.js"
     },
     {
-      "Identity": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.58\\staticwebassets\\scripts\\compression.min.js",
+      "Identity": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.59\\staticwebassets\\scripts\\compression.min.js",
       "SourceId": "Syncfusion.Blazor.Core",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.58\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.59\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Core",
       "RelativePath": "scripts/compression.min.js",
       "AssetKind": "All",
@@ -7511,13 +7511,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.58\\staticwebassets\\scripts\\compression.min.js"
+      "OriginalItemSpec": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.59\\staticwebassets\\scripts\\compression.min.js"
     },
     {
-      "Identity": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.58\\staticwebassets\\scripts\\excelexport.min.js",
+      "Identity": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.59\\staticwebassets\\scripts\\excelexport.min.js",
       "SourceId": "Syncfusion.Blazor.Core",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.58\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.59\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Core",
       "RelativePath": "scripts/excelexport.min.js",
       "AssetKind": "All",
@@ -7528,13 +7528,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.58\\staticwebassets\\scripts\\excelexport.min.js"
+      "OriginalItemSpec": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.59\\staticwebassets\\scripts\\excelexport.min.js"
     },
     {
-      "Identity": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.58\\staticwebassets\\scripts\\fileutils.min.js",
+      "Identity": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.59\\staticwebassets\\scripts\\fileutils.min.js",
       "SourceId": "Syncfusion.Blazor.Core",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.58\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.59\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Core",
       "RelativePath": "scripts/fileutils.min.js",
       "AssetKind": "All",
@@ -7545,13 +7545,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.58\\staticwebassets\\scripts\\fileutils.min.js"
+      "OriginalItemSpec": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.59\\staticwebassets\\scripts\\fileutils.min.js"
     },
     {
-      "Identity": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.58\\staticwebassets\\scripts\\pdfexport.min.js",
+      "Identity": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.59\\staticwebassets\\scripts\\pdfexport.min.js",
       "SourceId": "Syncfusion.Blazor.Core",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.58\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.59\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Core",
       "RelativePath": "scripts/pdfexport.min.js",
       "AssetKind": "All",
@@ -7562,13 +7562,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.58\\staticwebassets\\scripts\\pdfexport.min.js"
+      "OriginalItemSpec": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.59\\staticwebassets\\scripts\\pdfexport.min.js"
     },
     {
-      "Identity": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.58\\staticwebassets\\scripts\\popup.min.js",
+      "Identity": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.59\\staticwebassets\\scripts\\popup.min.js",
       "SourceId": "Syncfusion.Blazor.Core",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.58\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.59\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Core",
       "RelativePath": "scripts/popup.min.js",
       "AssetKind": "All",
@@ -7579,13 +7579,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.58\\staticwebassets\\scripts\\popup.min.js"
+      "OriginalItemSpec": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.59\\staticwebassets\\scripts\\popup.min.js"
     },
     {
-      "Identity": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.58\\staticwebassets\\scripts\\popupsbase.min.js",
+      "Identity": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.59\\staticwebassets\\scripts\\popupsbase.min.js",
       "SourceId": "Syncfusion.Blazor.Core",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.58\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.59\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Core",
       "RelativePath": "scripts/popupsbase.min.js",
       "AssetKind": "All",
@@ -7596,13 +7596,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.58\\staticwebassets\\scripts\\popupsbase.min.js"
+      "OriginalItemSpec": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.59\\staticwebassets\\scripts\\popupsbase.min.js"
     },
     {
-      "Identity": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.58\\staticwebassets\\scripts\\sf-svg-export.min.js",
+      "Identity": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.59\\staticwebassets\\scripts\\sf-svg-export.min.js",
       "SourceId": "Syncfusion.Blazor.Core",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.58\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.59\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Core",
       "RelativePath": "scripts/sf-svg-export.min.js",
       "AssetKind": "All",
@@ -7613,13 +7613,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.58\\staticwebassets\\scripts\\sf-svg-export.min.js"
+      "OriginalItemSpec": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.59\\staticwebassets\\scripts\\sf-svg-export.min.js"
     },
     {
-      "Identity": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.58\\staticwebassets\\scripts\\svgbase.min.js",
+      "Identity": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.59\\staticwebassets\\scripts\\svgbase.min.js",
       "SourceId": "Syncfusion.Blazor.Core",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.58\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.59\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Core",
       "RelativePath": "scripts/svgbase.min.js",
       "AssetKind": "All",
@@ -7630,13 +7630,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.58\\staticwebassets\\scripts\\svgbase.min.js"
+      "OriginalItemSpec": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.59\\staticwebassets\\scripts\\svgbase.min.js"
     },
     {
-      "Identity": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.58\\staticwebassets\\scripts\\syncfusion-blazor-base.min.js",
+      "Identity": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.59\\staticwebassets\\scripts\\syncfusion-blazor-base.min.js",
       "SourceId": "Syncfusion.Blazor.Core",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.58\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.59\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Core",
       "RelativePath": "scripts/syncfusion-blazor-base.min.js",
       "AssetKind": "All",
@@ -7647,13 +7647,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.58\\staticwebassets\\scripts\\syncfusion-blazor-base.min.js"
+      "OriginalItemSpec": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.59\\staticwebassets\\scripts\\syncfusion-blazor-base.min.js"
     },
     {
-      "Identity": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.58\\staticwebassets\\scripts\\syncfusion-blazor-extended.min.js",
+      "Identity": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.59\\staticwebassets\\scripts\\syncfusion-blazor-extended.min.js",
       "SourceId": "Syncfusion.Blazor.Core",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.58\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.59\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Core",
       "RelativePath": "scripts/syncfusion-blazor-extended.min.js",
       "AssetKind": "All",
@@ -7664,13 +7664,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.58\\staticwebassets\\scripts\\syncfusion-blazor-extended.min.js"
+      "OriginalItemSpec": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.59\\staticwebassets\\scripts\\syncfusion-blazor-extended.min.js"
     },
     {
-      "Identity": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.58\\staticwebassets\\scripts\\syncfusion-blazor.min.js",
+      "Identity": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.59\\staticwebassets\\scripts\\syncfusion-blazor.min.js",
       "SourceId": "Syncfusion.Blazor.Core",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.58\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.59\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Core",
       "RelativePath": "scripts/syncfusion-blazor.min.js",
       "AssetKind": "All",
@@ -7681,7 +7681,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.58\\staticwebassets\\scripts\\syncfusion-blazor.min.js"
+      "OriginalItemSpec": "C:\\Users\\berab\\.nuget\\packages\\syncfusion.blazor.core\\20.3.0.59\\staticwebassets\\scripts\\syncfusion-blazor.min.js"
     }
   ]
 }

@@ -1,7 +1,22 @@
 @page "/ViewBills"
 @using global::Shared.Models
 
-<div class="mainHolder">
+<SfIcon Name="IconName.Cut"></SfIcon>
+
+@code {
+
+    private Bill[] bills = new[] { new Bill(1, 1, System.DateTime.Now, System.DateTime.Now, 55, 1, "hello string", true) };
+
+
+    protected override void OnInitialized()
+    {
+        System.Console.WriteLine("This is the bill:" + bills[0]);
+        base.OnInitialized();
+    }
+
+    
+    /*
+<div>
     <table class="bills">
         <thead>
         <tr>
@@ -30,16 +45,5 @@
         </tbody>
     </table>
 </div>
-
-@code {
-
-    private Bill[] bills = new[] { new Bill(1, 1, System.DateTime.Now, System.DateTime.Now, 55, 1, "hello string", true) };
-
-
-    protected override void OnInitialized()
-    {
-        System.Console.WriteLine("This is the bill:" + bills[0]);
-        base.OnInitialized();
-    }
-
+     */
 }
