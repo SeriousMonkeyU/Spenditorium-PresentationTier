@@ -1,0 +1,29 @@
+.icon-client {
+    text-align: right;
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+.collapsed-content {
+    position: sticky;
+    width: 20rem;
+}
+
+.collapsed-components {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #457B9D;
+    border-radius: 5px;
+    color: white;
+}
+
+.buttons
+{
+    padding-top: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

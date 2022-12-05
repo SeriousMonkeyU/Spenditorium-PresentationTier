@@ -5,7 +5,12 @@
     gap:0;
 }
 
-
+.top-row[b-e1ogp90w9a] {
+    padding-top: 0.5rem;
+    text-align: right;
+    position: absolute;
+    right: 3rem;
+}
 
 main[b-e1ogp90w9a] {
     flex: 1;
