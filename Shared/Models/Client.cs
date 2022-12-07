@@ -9,6 +9,6 @@ public class Client
     
     public string name { get; set; }
     public string email { get; set; }
-    public DateTime dob { get; set; }
+    public string dob { get; set; }
     public long phoneNumber { get; set; }
 }
