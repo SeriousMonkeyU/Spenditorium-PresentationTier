@@ -7,10 +7,10 @@ public class ClientCreation
     
     public string name { get; }
     public string email { get; }
-    public DateTime dob { get; }
+    public string dob { get; }
     public long phoneNumber { get; }
 
-    public ClientCreation(string username, string password, string name, string email, DateTime dob,
+    public ClientCreation(string username, string password, string name, string email, string dob,
         long phoneNumber)
     {
         this.username = username;
