@@ -2,10 +2,19 @@
 {
     padding: 2rem 4rem 4rem;
     margin: 1rem 10% 10%;
-    text-align: center;
+    text-align: left;
     vertical-align: top;
     background-color: #F1FAEE;
-    height: 60rem;
+    height: 30rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.centered
+{
+    text-align: center;
 }
 
 .space

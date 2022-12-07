@@ -3,62 +3,21 @@
 @using HttpClient.Implementations
 
 @inject NavigationManager Nav;
-<div class="mainHolder">
-    <div class="split leftAlignment">
-        <ul style="list-style-type: none;">
-            <li style>
-                <label for="fName">Full name: </label>
-                <div class="space"></div>
-            </li>
-            <li>
-                <label for="email">Email: </label>
-                                <div class="space"></div>
-            </li>
-            <li>
-                <label for="dob">Date of Birth: </label>
-                                <div class="space"></div>
-            </li>
-            <li>
-                <label for="phone">Phone number: </label>
-                                <div class="space"></div>
-            </li>
-            <li>
-                <label for="username">Username: </label>
-                                <div class="space"></div>
-            </li>
-            <li>
-                <label for="password">Password: </label>
-                                <div class="space"></div>
-            </li>
-        </ul>
-
-    </div>
-    <div class="split rightAlignment">
-        <ul style="list-style-type: none;">
-            <li>
-                <input type="text" id="fName" name="fullName" @bind="FName" @oninput="@((e) => { FName = (string)e.Value; })"><br>
-            </li>
-            <li>
-                <input type="text" id="email" name="email" @bind="Email" @oninput="@((e) => { Email = (string)e.Value; })"><br>
-            </li>
-            <li>
-                <input type="date" id="dob" name="dob" @bind="Dob" @oninput="@((e) => { Dob = (DateTime)e.Value; })"><br>
-            </li>
-            <li>
-                <input type="text" id="phone" name="phoneNumber" @bind="Pn" @oninput="@((e) => { Pn = (long)e.Value; })"><br>
-            </li>
-            <li>
-                <input type="text" id="username" name="username" minlength="3" @bind="Username" @oninput="@((e) => { Username = (string)e.Value; })" required><br>
-            </li>
-            <li>
-                <input type="password" id="password" name="password" minlength="3" @bind="Password" @oninput="@((e) => { Password = (string)e.Value; })" required><br>
-            </li>
-        </ul>
-        <div class="space"></div>
+<div class="centered">
+    <div class="mainHolder">
+        <label for="fName">Full name: </label>
+        <input type="text" id="fName" name="fullName" @bind="FName" @oninput="@((e) => { FName = (string)e.Value; })">
+        <label for="email">Email: </label>
+        <input type="text" id="email" name="email" @bind="Email" @oninput="@((e) => { Email = (string)e.Value; })">
+        <label for="dob">Date of Birth: </label>
+        <input type="date" id="dob" name="dob" @bind="Dob" @oninput="@((e) => { Dob = (DateTime)e.Value; })">
+        <label for="phone">Phone number: </label>
+        <input type="text" id="phone" name="phoneNumber" @bind="Pn" @oninput="@((e) => { Pn = (long)e.Value; })">
+        <label for="username">Username: </label>
+        <input type="text" id="username" name="username" minlength="3" @bind="Username" @oninput="@((e) => { Username = (string)e.Value; })" required>
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password" minlength="3" @bind="Password" @oninput="@((e) => { Password = (string)e.Value; })" required>
         <button id="Register" @onclick="TryRegistration" class="Btn" IsToggle="false">Sign Up</button>
-        <br/>
-        <br/>
-        <label for="Register" style="border-width: 2px; border-color: black; color: white; background-color: red">@error</label>
     </div>
 </div>
 
@@ -85,11 +44,5 @@
             Nav.NavigateTo($"/");
         }
         else error = "Invalid Input credentials";
-
-
-
-
-
     }
-
-}
+    } 

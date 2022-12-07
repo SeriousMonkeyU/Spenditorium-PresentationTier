@@ -23,7 +23,7 @@ public class ClientHttpClient : IClientHttpServices
     
     public async Task<Client> Create(ClientCreation dto)
     {
-        string uri = "http://localhost:8090/addNewClient";
+        string uri = "http://localhost:8090/client/register";
         string clientSerialized = JsonSerializer.Serialize(dto);
         StringContent content = new StringContent(
             clientSerialized,
@@ -53,7 +53,7 @@ public class ClientHttpClient : IClientHttpServices
             password = password
         };
         
-        string uri = "http://localhost:8090/login";
+        string uri = "http://localhost:8090/client/login";
         string answerSerialized = JsonSerializer.Serialize(userLoginDto);
         StringContent content = new StringContent(
             answerSerialized,
