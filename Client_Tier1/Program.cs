@@ -1,4 +1,6 @@
 using BlazorWasm.Auth;
+using BlazorWasm.Services;
+using BlazorWasm.Services.Http;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Client_Tier1;
@@ -16,7 +18,7 @@ builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthProvider>();
 builder.Services.AddScoped<IClientHttpServices, ClientHttpClient>();
 
 builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthProvider>();
-
+builder.Services.AddScoped<IAuthService, JwtAuthService>();
 AuthorizationPolicies.AddPolicies(builder.Services);
 
 await builder.Build().RunAsync();

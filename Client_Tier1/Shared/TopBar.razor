@@ -1,7 +1,8 @@
 @using global::Shared.DTO
 @using HttpClient.Implementations
+@using BlazorWasm.Services
 @inject NavigationManager nav;
-@inject ClientHttpClient client;
+@inject IAuthService authService
 
 <img class="icon-client" src="images/client.png" alt="Authorize" onclick="@ToggleNavMenu">
 
@@ -41,7 +42,7 @@
     {
         if (Username.Length > 3 && Username.Length < 16 && Password.Length > 3 & Password.Length < 16)
         {
-            await client.Login(new UserLoginDto(Username, Password));
+            //await authService.LoginAsync(Username, Password);
             ToggleNavMenu();
             nav.NavigateTo("/");
         }
@@ -49,7 +50,7 @@
 
     private async void TryLogout()
     {
-        
+        await authService.LogoutAsync();
     }
 
     private void RedirectToRegister()

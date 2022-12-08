@@ -1,7 +1,9 @@
 @page "/authentication/register"
 @using global::Shared.DTO
 @using HttpClient.Implementations
-@inject ClientHttpClient client
+@using BlazorWasm.Services
+@using global::Shared.Models
+@inject IAuthService authService
 
 @inject NavigationManager Nav;
 <div class="centered">
@@ -43,8 +45,7 @@
             tempdob = Dob.ToString("MM/dd/yyyy");
             
             ClientCreation account = new ClientCreation(Username, Password, FName, Email, tempdob, Pn);
-            client = new ClientHttpClient(new HttpClient());
-            await client.Create(account);
+            await authService.RegisterAsync(account);
             Nav.NavigateTo($"/");
         }
         else error = "Invalid Input credentials";
