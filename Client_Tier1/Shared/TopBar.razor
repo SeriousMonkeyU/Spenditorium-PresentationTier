@@ -1,36 +1,59 @@
+@using global::Shared.DTO
+@using HttpClient.Implementations
+@using BlazorWasm.Services
 @inject NavigationManager nav;
+@inject IAuthService authService
 
 <img class="icon-client" src="images/client.png" alt="Authorize" onclick="@ToggleNavMenu">
 
-
-<div class="@TopMenuCssClass collapsed-content">
-    <div class="collapsed-components">
-        <p>Username: </p>
-        <input type="text" id="username" name="username">
-        <p>Password: </p>
-        <input type="password" id="password" name="password">
-        <div class="buttons">
-            <button type="button" onclick="@tryLogin">Log In</button>
-            <button type="button" onclick="@redirectRegister">Sign Up</button>
+<AuthorizeView>
+    <NotAuthorized>
+        <div class="@TopMenuCssClass collapsed-content">
+            <div class="collapsed-components">
+                <p>Username: </p>
+                <input type="text" id="username" name="username" minlength="3" @bind="Username" @oninput="@((e) => { Username = (string)e.Value; })" required>
+                <p>Password: </p>
+                <input type="password" id="password" name="password" minlength="3" @bind="Password" @oninput="@((e) => { Password = (string)e.Value; })" required>
+                <div class="buttons">
+                    <button type="button" onclick="@TryLogin">Log In</button>
+                    <button type="button" onclick="@RedirectToRegister">Sign Up</button>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
+    </NotAuthorized>
+    <Authorized>
+        <img class="icon-client" src="images/logout.png" alt="LogOut" onclick="@TryLogout">
+    </Authorized>
+</AuthorizeView>
 
 @code {
     private bool collapseAuthorize = true;
-
     private string? TopMenuCssClass => collapseAuthorize ? "collapse" : null;
+
+    private string Username = "";
+    private string Password = "";
 
     private void ToggleNavMenu()
     {
         collapseAuthorize = !collapseAuthorize;
     }
 
-    private void tryLogin()
+    private async void TryLogin()
     {
+        if (Username.Length > 3 && Username.Length < 16 && Password.Length > 3 & Password.Length < 16)
+        {
+            //await authService.LoginAsync(Username, Password);
+            ToggleNavMenu();
+            nav.NavigateTo("/");
+        }
     }
 
-    private void redirectRegister()
+    private async void TryLogout()
+    {
+        await authService.LogoutAsync();
+    }
+
+    private void RedirectToRegister()
     {
         ToggleNavMenu();
         nav.NavigateTo($"/authentication/register");
