@@ -18,12 +18,12 @@ public class ClientHttpClient : IClientHttpServices
 
     public ClientHttpClient(System.Net.Http.HttpClient httpClient)
     {
-        this._httpClient = httpClient;
+        _httpClient = httpClient;
     }
     
     public async Task<Client> Create(ClientCreation dto)
     {
-        string uri = "http://localhost:8090/client/register";
+        string uri = "https://localhost:8090/client/register";
         string clientSerialized = JsonSerializer.Serialize(dto);
         StringContent content = new StringContent(
             clientSerialized,
@@ -45,13 +45,9 @@ public class ClientHttpClient : IClientHttpServices
         return client;
     }
 
-    public async Task Login(string username, string password)
+    public async Task Login(UserLoginDto ULD)
     {
-        UserLoginDto userLoginDto = new()
-        {
-            username = username,
-            password = password
-        };
+        UserLoginDto userLoginDto = ULD;
         
         string uri = "http://localhost:8090/client/login";
         string answerSerialized = JsonSerializer.Serialize(userLoginDto);

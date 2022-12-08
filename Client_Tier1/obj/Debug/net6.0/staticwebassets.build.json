@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "W8ClG5VSbAhU6HseERWW9n5KExh3TxiJg7JbH4a7rWs=",
+  "Hash": "TqpETYA+zRC/Mo4wjKRhlrsuihYMYoaYYUIUdQetNGM=",
   "Source": "Client_Tier1",
   "BasePath": "/",
   "Mode": "Root",
@@ -7444,6 +7444,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\client.png"
+    },
+    {
+      "Identity": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\wwwroot\\images\\logout.png",
+      "SourceId": "Client_Tier1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "images/logout.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logout.png"
     },
     {
       "Identity": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\wwwroot\\index.html",
