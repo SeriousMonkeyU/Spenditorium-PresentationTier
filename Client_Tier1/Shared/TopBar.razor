@@ -42,7 +42,7 @@
     {
         if (Username.Length > 3 && Username.Length < 16 && Password.Length > 3 & Password.Length < 16)
         {
-            //await authService.LoginAsync(Username, Password);
+            await authService.LoginAsync(Username, Password);
             ToggleNavMenu();
             nav.NavigateTo("/");
         }

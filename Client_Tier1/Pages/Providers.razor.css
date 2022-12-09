@@ -1,0 +1,41 @@
+.mainHolder
+{
+    padding: 2rem 4rem 4rem;
+    margin: 1rem 10% 10%;
+    text-align: center;
+    vertical-align: top;
+    background-color: #F1FAEE;
+    height: 55rem;
+    width: 45rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 3rem;
+}
+
+.centered
+{
+    text-align: center;
+}
+
+.sideHolder
+{
+    text-align: center;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #1D3557;
+    width: 15rem;
+    
+    background-color: rgba(69, 123, 157, 0.3);
+}
+
+.sideHolder:hover {
+    background-color: rgba(69, 123, 157, 0.1);
+    color: #1D3557;
+}
+
+.sideHolder:active {
+    background-color: rgba(69, 123, 157, 1);
+    color: #1D3557;
+}
