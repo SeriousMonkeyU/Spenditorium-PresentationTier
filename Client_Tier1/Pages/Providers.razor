@@ -1,5 +1,10 @@
 @page "/Providers"
+@using global::Shared.Models
+@using BlazorWasm.Services.Http
+@using System.Security.Claims
+@using System.Text.Json
 @inject NavigationManager nav
+@inject JwtAuthService jwt
 
 <div class="centered">
     <h3>Select a provider: </h3>
@@ -22,24 +27,36 @@
 
 @code {
 
+    private bool[] subs { get; set; } = new bool[4];
+
+    protected override async Task OnInitializedAsync()
+    {
+        subs = JsonSerializer.Deserialize<bool[]>(jwt.GetAuthAsync().Result.FindFirst("subscriptions")?.Value);
+    }
+    
+    // Checks if client is subscribed to that provider in the system
+    void RedirectToElectricity()
+    {
+        if (subs[0])
+            nav.NavigateTo($"/Electricity");
+    }
+
     void RedirectToHeating()
     {
-        nav.NavigateTo($"/Heating");
+        if (subs[1])
+            nav.NavigateTo($"/Heating");
     }
 
     void RedirectToHousing()
     {
-        nav.NavigateTo($"/Housing");
+        if (subs[2])
+            nav.NavigateTo($"/Housing");
     }
 
     void RedirectToWater()
     {
-        nav.NavigateTo($"/Water");
-    }
-
-    void RedirectToElectricity()
-    {
-        nav.NavigateTo($"/Electricity");
+        if (subs[3])
+            nav.NavigateTo($"/Water");
     }
 
 }

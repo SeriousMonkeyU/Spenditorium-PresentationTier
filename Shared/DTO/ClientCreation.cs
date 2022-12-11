@@ -9,7 +9,7 @@ public class ClientCreation
     public string email { get; }
     public string dob { get; }
     public long phoneNumber { get; }
-    public bool[] suscriptions { get; } // example: "ABCD" - > subscribed to e, h, h, w. "ACD" - > subscribed to e, h, w.
+    public bool[] suscriptions { get; } // 0 - Electricity, 1 - Heating, 2 - Housing, 3 - Water
 
     public ClientCreation(string username, string password, string name, string email, string dob,
         long phoneNumber, bool[] subscriptions)

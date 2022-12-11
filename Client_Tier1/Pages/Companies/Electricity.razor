@@ -1,6 +1,30 @@
 @page "/Electricity"
-<h3>Electricity</h3>
+@using global::Shared.Models
+@using Client_Tier1.Service
+@using BlazorWasm.Services.Http
+@using System.Text.Json
+@inject IClientService _clientService
+@inject JwtAuthService jwt;
+
+<h3>@CompanyName</h3>
+
+<div class="mainHolder">
+    Bills:
+    <div>
+        
+    </div>
+</div>
 
 @code {
-    
+
+    private string CompanyName { get; set; } = "Elektron";
+
+    private Bills bills = new Bills();
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Gets id from claims, and Company name "Electricity" to parse it to "GetBillsById" and return a list of bills
+        bills = await _clientService.GetBillsById(JsonSerializer.Deserialize<int>(jwt.GetAuthAsync().Result.FindFirst("id")?.Value), "Electricity");
+    }
+
 }

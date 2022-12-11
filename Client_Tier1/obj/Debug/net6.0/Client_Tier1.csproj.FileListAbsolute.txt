@@ -1255,8 +1255,6 @@ C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tie
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\bin\Debug\net6.0\wwwroot\_framework\blazor.boot.json
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\bin\Debug\net6.0\wwwroot\_framework\Client_Tier1.dll
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\bin\Debug\net6.0\wwwroot\_framework\Client_Tier1.pdb
-C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\bin\Debug\net6.0\wwwroot\_framework\HttpClient.dll
-C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\bin\Debug\net6.0\wwwroot\_framework\HttpClient.pdb
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\bin\Debug\net6.0\wwwroot\_framework\Shared.dll
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\bin\Debug\net6.0\wwwroot\_framework\Shared.pdb
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\bin\Debug\net6.0\wwwroot\_framework\Syncfusion.Blazor.Core.dll
@@ -1267,8 +1265,6 @@ C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tie
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\bin\Debug\net6.0\wwwroot\_framework\Shared.dll.gz
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\bin\Debug\net6.0\wwwroot\_framework\Syncfusion.Licensing.dll.gz
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\bin\Debug\net6.0\wwwroot\_framework\Client_Tier1.pdb.gz
-C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\bin\Debug\net6.0\wwwroot\_framework\HttpClient.pdb.gz
-C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\bin\Debug\net6.0\wwwroot\_framework\HttpClient.dll.gz
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\bin\Debug\net6.0\Client_Tier1.staticwebassets.runtime.json
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\bin\Debug\net6.0\Client_Tier1.dll
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\bin\Debug\net6.0\Client_Tier1.pdb
@@ -1473,9 +1469,7 @@ C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tie
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\bin\Debug\net6.0\icudt_CJK.dat
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\bin\Debug\net6.0\icudt_EFIGS.dat
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\bin\Debug\net6.0\icudt_no_CJK.dat
-C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\bin\Debug\net6.0\HttpClient.dll
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\bin\Debug\net6.0\Shared.dll
-C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\bin\Debug\net6.0\HttpClient.pdb
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\bin\Debug\net6.0\Shared.pdb
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\obj\Debug\net6.0\Client_Tier1.csproj.AssemblyReference.cache
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\obj\Debug\net6.0\Client_Tier1.GeneratedMSBuildEditorConfig.editorconfig
@@ -1684,9 +1678,7 @@ C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tie
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\obj\Debug\net6.0\build-gz\7on3m1uc.gz
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\obj\Debug\net6.0\build-gz\CRrN94Fo.gz
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\obj\Debug\net6.0\build-gz\JI8Ytrkn.gz
-C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\obj\Debug\net6.0\build-gz\Q8AmAzhx.gz
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\obj\Debug\net6.0\build-gz\N0f8kgSH.gz
-C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\obj\Debug\net6.0\build-gz\OhKZWxSr.gz
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\obj\Debug\net6.0\build-gz\Gr009CoI.gz
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\obj\Debug\net6.0\build-gz\AuatZqtz.gz
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\obj\Debug\net6.0\build-gz\OD1VRmhz.gz
@@ -1707,3 +1699,4 @@ C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tie
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\obj\Debug\net6.0\ref\Client_Tier1.dll
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\obj\Debug\net6.0\scopedcss\Shared\TopBar.razor.rz.scp.css
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\obj\Debug\net6.0\scopedcss\Pages\Providers.razor.rz.scp.css
+C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\obj\Debug\net6.0\scopedcss\Pages\Companies\Electricity.razor.rz.scp.css
