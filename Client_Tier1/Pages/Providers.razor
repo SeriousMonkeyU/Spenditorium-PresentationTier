@@ -1,24 +1,45 @@
 @page "/Providers"
+@inject NavigationManager nav
 
 <div class="centered">
     <h3>Select a provider: </h3>
     <div class="mainHolder">
-        <div class="sideHolder" href="">
-            Heating
-        </div>
-        <div class="sideHolder">
-            Housing
-        </div>
-        <div class="sideHolder">
-            Water
-        </div>
-        <div class="sideHolder">
+        <button type="button" class="sideHolder" onclick="@RedirectToElectricity">
             Electricity
-        </div>
-        
+        </button>
+        <button type="button" class="sideHolder" onclick="@RedirectToHeating">
+            Heating
+        </button>
+        <button type="button" class="sideHolder" onclick="@RedirectToHousing">
+            Housing
+        </button>
+        <button type="button" class="sideHolder" onclick="@RedirectToWater">
+            Water
+        </button>
+
     </div>
 </div>
 
 @code {
+
+    void RedirectToHeating()
+    {
+        nav.NavigateTo($"/Heating");
+    }
+
+    void RedirectToHousing()
+    {
+        nav.NavigateTo($"/Housing");
+    }
+
+    void RedirectToWater()
+    {
+        nav.NavigateTo($"/Water");
+    }
+
+    void RedirectToElectricity()
+    {
+        nav.NavigateTo($"/Electricity");
+    }
 
 }

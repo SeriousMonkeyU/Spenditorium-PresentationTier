@@ -10,7 +10,7 @@ public class AuthorizationPolicies
         
         services.AddAuthorizationCore(options =>
         {
-            options.AddPolicy("MustBeOldEnough", a =>
+            options.AddPolicy("MustBeSubToElectricity", a =>
                 a.RequireAuthenticatedUser().RequireClaim("email", "email@gmail.com"));
         });
     }

@@ -1,5 +1,3 @@
-using System.ComponentModel.DataAnnotations.Schema;
-
 namespace Shared.Models;
 
 public class Client
@@ -11,4 +9,7 @@ public class Client
     public string email { get; set; }
     public string dob { get; set; }
     public long phoneNumber { get; set; }
+    
+    // test subscription system below
+    public bool subscriptions { get; set; }
 }
