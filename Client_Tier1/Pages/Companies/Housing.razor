@@ -1,6 +1,20 @@
 @page "/Housing"
-<h3>Housing</h3>
+@using global::Shared.Models
+@using Client_Tier1.Service
+@inject IAuthService _authService
+<h3>@CompanyName</h3>
 
 @code {
+    private string CompanyName { get; set; } = "Bolig Portal";
+
+    private Bills bills = new Bills();
+
     
+    /*
+    protected override async Task OnInitializedAsync()
+    {
+        // Gets id from claims, and Company name "Electricity" to parse it to "GetBillsById" and return a list of bills
+        bills = await _clientService.GetBillsById(JsonSerializer.Deserialize<int>(_authService.GetAuthAsync().Result.FindFirst("id")?.Value), "Housing");
+    }
+*/
 }

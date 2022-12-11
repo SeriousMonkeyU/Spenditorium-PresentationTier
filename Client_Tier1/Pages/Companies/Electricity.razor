@@ -4,7 +4,7 @@
 @using BlazorWasm.Services.Http
 @using System.Text.Json
 @inject IClientService _clientService
-@inject JwtAuthService jwt;
+@inject IAuthService _authService
 
 <h3>@CompanyName</h3>
 
@@ -21,10 +21,13 @@
 
     private Bills bills = new Bills();
 
+    
+    /*
     protected override async Task OnInitializedAsync()
     {
         // Gets id from claims, and Company name "Electricity" to parse it to "GetBillsById" and return a list of bills
-        bills = await _clientService.GetBillsById(JsonSerializer.Deserialize<int>(jwt.GetAuthAsync().Result.FindFirst("id")?.Value), "Electricity");
+        bills = await _clientService.GetBillsById(JsonSerializer.Deserialize<int>(_authService.GetAuthAsync().Result.FindFirst("id")?.Value), "Electricity");
     }
-
+*/
+    
 }
