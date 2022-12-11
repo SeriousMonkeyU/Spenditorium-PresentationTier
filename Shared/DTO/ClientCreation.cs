@@ -9,9 +9,10 @@ public class ClientCreation
     public string email { get; }
     public string dob { get; }
     public long phoneNumber { get; }
+    public bool[] suscriptions { get; } // example: "ABCD" - > subscribed to e, h, h, w. "ACD" - > subscribed to e, h, w.
 
     public ClientCreation(string username, string password, string name, string email, string dob,
-        long phoneNumber)
+        long phoneNumber, bool[] subscriptions)
     {
         this.username = username;
         this.password = password;
@@ -19,10 +20,12 @@ public class ClientCreation
         this.email = email;
         this.dob = dob;
         this.phoneNumber = phoneNumber;
+        this.suscriptions = new bool[4];
+        this.suscriptions = subscriptions;
     }
 
     public override String ToString()
     {
-        return username + " " + password + " " + name + " " + email + " " + dob + " " + phoneNumber;
+        return username + " " + password + " " + name + " " + email + " " + dob + " " + phoneNumber + " " + suscriptions;
     }
 }

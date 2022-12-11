@@ -2,6 +2,7 @@
 @using global::Shared.DTO
 @using HttpClient.Implementations
 @using BlazorWasm.Services
+@using Client_Tier1.Service
 @using global::Shared.Models
 @inject IAuthService authService
 
@@ -20,6 +21,15 @@
         <input type="text" id="username" name="username" minlength="3" @bind="Username" @oninput="@((e) => { Username = (string)e.Value; })" required>
         <label for="password">Password: </label>
         <input type="password" id="password" name="password" minlength="3" @bind="Password" @oninput="@((e) => { Password = (string)e.Value; })" required>
+        <br/>
+        <h3>Subscribe to:</h3>
+        <div class="subscriptions">
+            <input class="subItem" type="checkbox" id="Electricity" @bind="subscriptions[0]"/><label for="Electricity">Electricity</label>
+            <input class="subItem" type="checkbox" id="Heating"/><label for="Heating">Heating</label>
+            <input class="subItem" type="checkbox" id="Housing"/><label for="Housing">Housing</label>
+            <input class="subItem" type="checkbox" id="Water"/><label for="Water">Water</label>
+        </div>
+        <br/>
         <button id="Register" @onclick="TryRegistration" class="Btn" IsToggle="false">Sign Up</button>
         <label for="Register">@error</label>
     </div>
@@ -33,9 +43,9 @@
     private string Email { get; set; } = "";
     private DateTime Dob { get; set; } = new(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
     private long Pn { get; set; } = 11111111;
+    private bool[] subscriptions = new bool[4];
 
     private string error { get; set; } = "";
-
 
     private async Task TryRegistration()
     {
@@ -43,11 +53,12 @@
         {
             string tempdob = Dob.ToShortDateString();
             tempdob = Dob.ToString("MM/dd/yyyy");
-            
-            ClientCreation account = new ClientCreation(Username, Password, FName, Email, tempdob, Pn);
+
+
+            ClientCreation account = new ClientCreation(Username, Password, FName, Email, tempdob, Pn, subscriptions);
             await authService.RegisterAsync(account);
             Nav.NavigateTo($"/");
         }
-        else error = "Invalid Input credentials";
+        else error = "Invalid input items";
     }
     } 

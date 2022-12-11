@@ -1,8 +1,7 @@
 ﻿using System.Security.Claims;
 using Shared.DTO;
-using Shared.Models;
 
-namespace BlazorWasm.Services;
+namespace Client_Tier1.Service;
 
 public interface IAuthService
 {
