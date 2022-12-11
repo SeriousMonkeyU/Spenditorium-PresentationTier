@@ -8,7 +8,7 @@ namespace BlazorWasm.Services.Http;
 
 public class JwtAuthService : IAuthService
 {
-    private readonly System.Net.Http.HttpClient client = new ();
+    private readonly HttpClient client = new ();
 
     // this private variable for simple caching
     public static string? Jwt { get; private set; } = "";
@@ -91,7 +91,7 @@ public class JwtAuthService : IAuthService
         string payload = jwt.Split('.')[1];
         byte[] jsonBytes = ParseBase64WithoutPadding(payload);
         Dictionary<string, object>? keyValuePairs = JsonSerializer.Deserialize<Dictionary<string, object>>(jsonBytes);
-        return keyValuePairs!.Select(kvp => new Claim(kvp.Key, kvp.Value.ToString()!));
+        return keyValuePairs!.Select(kvp => new Claim(kvp.Key, JsonSerializer.Serialize(kvp.Value))); //kvp.Value.ToString()!));
     }
 
     private static byte[] ParseBase64WithoutPadding(string base64)

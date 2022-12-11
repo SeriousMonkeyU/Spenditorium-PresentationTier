@@ -1,3 +1,17 @@
+/* /Pages/Companies/Electricity.razor.rz.scp.css */
+.mainHolder[b-gmz283c75z]
+{
+    padding: 2rem 4rem 4rem;
+    margin: 1rem 10% 10%;
+    text-align: left;
+    vertical-align: top;
+    background-color: #F1FAEE;
+    height: 37rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 /* /Pages/Index.razor.rz.scp.css */
 .mainHolder[b-fv7a5lpsma]
 {

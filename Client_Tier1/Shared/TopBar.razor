@@ -1,5 +1,4 @@
 @using global::Shared.DTO
-@using HttpClient.Implementations
 @using BlazorWasm.Services
 @using Client_Tier1.Service
 @inject NavigationManager nav;
@@ -33,7 +32,9 @@
 
     private string Username = "";
     private string Password = "";
-
+    
+    
+    
     private void ToggleNavMenu()
     {
         collapseAuthorize = !collapseAuthorize;

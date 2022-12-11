@@ -9,7 +9,5 @@ public class Client
     public string email { get; set; }
     public string dob { get; set; }
     public long phoneNumber { get; set; }
-    
-    // test subscription system below
-    public bool subscriptions { get; set; }
+    public bool[] subscriptions { get; set; } // 0 - Electricity, 1 - Heating, 2 - Housing, 3 - Water
 }

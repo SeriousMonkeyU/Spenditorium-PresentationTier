@@ -1,14 +1,14 @@
 ﻿using System.Security.Claims;
-using HttpClient.IClientService;
+using Client_Tier1.Service;
 using Microsoft.AspNetCore.Components.Authorization;
 
 namespace BlazorWasm.Auth;
 
 public class CustomAuthProvider : AuthenticationStateProvider
 {
-    private readonly IClientHttpServices authService;
+    private readonly IAuthService authService;
 
-    public CustomAuthProvider(IClientHttpServices authService)
+    public CustomAuthProvider(IAuthService authService)
     {
         this.authService = authService;
         authService.OnAuthStateChanged += AuthStateChanged;
