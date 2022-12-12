@@ -10,12 +10,12 @@ public class ClientCreation
     public string name { get; }
     public string email { get; }
     public string dob { get; }
-    public long phoneNumber { get; }
+    public string phoneNumber { get; }
     public List<Bill> bills { get; }
     public bool[] suscriptions { get; } // 0 - Electricity, 1 - Heating, 2 - Housing, 3 - Water
 
     public ClientCreation(string username, string password, string name, string email, string dob,
-        long phoneNumber, List<Bill> bills, bool[] subscriptions)
+        string phoneNumber, List<Bill> bills, bool[] subscriptions)
     {
         this.username = username;
         this.password = password;
@@ -30,6 +30,6 @@ public class ClientCreation
 
     public override String ToString()
     {
-        return username + " " + password + " " + name + " " + email + " " + dob + " " + phoneNumber + " " + suscriptions;
+        return username + " " + password + " " + name + " " + email + " " + dob + " " + phoneNumber + " " + suscriptions[0] + " " + suscriptions[1] + " " + suscriptions[2] + " " + suscriptions[3] + " " + bills;
     }
 }
