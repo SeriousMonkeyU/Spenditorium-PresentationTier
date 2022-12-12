@@ -22,7 +22,14 @@
         </div>
     </NotAuthorized>
     <Authorized>
-        <img class="icon-client" src="images/logout.png" alt="LogOut" onclick="@TryLogout">
+        <div class="@TopMenuCssClass collapsed-content">
+            <div class="collapsed-components">
+                <div class="buttonsAuth">
+                    <button type="button" onclick="@RedirectToProfile">Profile page</button>
+                    <button type="button" onclick="@TryLogout">Logout</button>
+                </div>
+            </div>
+        </div>
     </Authorized>
 </AuthorizeView>
 
@@ -32,9 +39,8 @@
 
     private string Username = "";
     private string Password = "";
-    
-    
-    
+
+
     private void ToggleNavMenu()
     {
         collapseAuthorize = !collapseAuthorize;
@@ -59,6 +65,12 @@
     {
         ToggleNavMenu();
         nav.NavigateTo($"/authentication/register");
+    }
+
+    private void RedirectToProfile()
+    {
+        ToggleNavMenu();
+        nav.NavigateTo($"/Profile");
     }
 
 }

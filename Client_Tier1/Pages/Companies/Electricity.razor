@@ -5,23 +5,60 @@
 @using System.Text.Json
 @inject IClientService _clientService
 @inject IAuthService _authService
-
-<h3>@CompanyName</h3>
+@inject NavigationManager nav;
 
 <div class="mainHolder">
-    Bills:
-    <div>
-        
-    </div>
+    <h3>@CompanyName</h3>
+    <br>
+    <table class="bills">
+        <thead>
+        <tr>
+            <th>Billing number</th>
+            <th>Billing date</th>
+            <th>Due date</th>
+            <th>Total to pay</th>
+            <th>Is payed</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in bills.getBills())
+        {
+            <tr onclick="@ToggleNavMenu">
+                <td>№ @item.id</td>
+                <td>@item.billingdate.Date.ToString("d")</td>
+                <td>@item.duedate.Date.ToString("d")</td>
+                <td>@item.total dkk</td>
+                <td>@item.payedstatus</td>
+            </tr>
+            <tr class="@TopMenuCssClass collapsed-content">
+                <td colspan="5"><div class="collapsed-components">Hello?</div></td>
+            </tr>
+        }
+        </tbody>
+    </table>
+    <button type="button" id="refresh" onclick="@Refresh">Refresh</button>
 </div>
 
 @code {
 
+    private bool collapseAuthorize = true;
+    private string? TopMenuCssClass => collapseAuthorize ? "collapse" : null;
+    
     private string CompanyName { get; set; } = "Elektron";
 
     private Bills bills = new Bills();
 
+    private void Refresh()
+    {
+        bills.getBills().Add(new Bill(1, 1, DateTime.Now, DateTime.Now, 50, 1, "Elektron", true));
+    }
     
+
+    private void ToggleNavMenu()
+    {
+        collapseAuthorize = !collapseAuthorize;
+    }
+
     /*
     protected override async Task OnInitializedAsync()
     {
@@ -29,5 +66,5 @@
         bills = await _clientService.GetBillsById(JsonSerializer.Deserialize<int>(_authService.GetAuthAsync().Result.FindFirst("id")?.Value), "Electricity");
     }
 */
-    
+
 }
