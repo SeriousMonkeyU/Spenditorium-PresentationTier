@@ -4,6 +4,7 @@
 @using BlazorWasm.Services.Http
 @using System.Text.Json
 @inject IAuthService _authService
+@inject IClientService _clientService
 @inject NavigationManager nav;
 
 <div class="mainHolder">
@@ -15,6 +16,8 @@
             <th>Billing number</th>
             <th>Billing date</th>
             <th>Due date</th>
+            <th>Usage</th>
+            <th>Price per unit</th>
             <th>Total to pay</th>
             <th>Is payed</th>
         </tr>
@@ -22,15 +25,14 @@
         <tbody>
         @foreach (var item in bills)
         {
-            <tr onclick="@ToggleNavMenu">
+            <tr @onclick="()=>RedirectToViewBill(item.id)">
                 <td>№ @item.id</td>
                 <td>@item.billingdate.Date.ToString("d")</td>
                 <td>@item.duedate.Date.ToString("d")</td>
+                <td>@item.amount</td>
+                <td>@item.priceperitem</td>
                 <td>@item.total dkk</td>
                 <td>@item.paidstatus</td>
-            </tr>
-            <tr class="@TopMenuCssClass collapsed-content">
-                <td colspan="5"><div class="collapsed-components">Hello?</div></td>
             </tr>
         }
         </tbody>
@@ -51,18 +53,17 @@
     {
         bills.Add(new Bill(1, 1, DateTime.Now, DateTime.Now, 32424, 50, 1, "Elektron", true));
     }
-    
 
-    private void ToggleNavMenu()
+    private void RedirectToViewBill(int id)
     {
-        collapseAuthorize = !collapseAuthorize;
+        nav.NavigateTo($"/ViewBill/{id.ToString()}");
     }
-
+    
     /*
     protected override async Task OnInitializedAsync()
     {
         // Gets id from claims, and Company name "Electricity" to parse it to "GetBillsById" and return a list of bills
-        bills = await _clientService.GetBillsById(JsonSerializer.Deserialize<int>(_authService.GetAuthAsync().Result.FindFirst("id")?.Value), "Electricity");
+        bills = await _clientService.GetBillsByUsername(JsonSerializer.Deserialize<string>(_authService.GetAuthAsync().Result.FindFirst("id")?.Value), "Electricity");
     }
 */
 

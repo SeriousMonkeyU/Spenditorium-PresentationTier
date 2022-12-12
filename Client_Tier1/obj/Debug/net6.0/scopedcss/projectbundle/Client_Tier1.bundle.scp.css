@@ -133,6 +133,57 @@ th[b-cplwvizjc0] {
     border-radius: 150px;
     color: #1D3557;
 }
+/* /Pages/Companies/ViewBill.razor.rz.scp.css */
+.mainHolder[b-zuk7msvaon] 
+{
+    padding: 2rem 4rem 4rem;
+    margin: 1rem 10% 10%;
+    text-align: left;
+    vertical-align: top;
+    background-color: #F1FAEE;
+    width: 80%;
+    
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.bill-header[b-zuk7msvaon]
+{
+    border-bottom-style: solid;
+    border-bottom-color: rgba(69, 123, 157, 1);
+}
+
+.bill-item[b-zuk7msvaon]
+{
+    border-radius: 12px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(69, 123, 157, 0.5);
+    padding: 4px;
+}
+
+.bill-item-category[b-zuk7msvaon]
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.space[b-zuk7msvaon]
+{
+    padding: 2rem;
+}
+
+.even-coloring[b-zuk7msvaon]
+{
+    background-color: #A8DADC;
+}
+
+.text-color[b-zuk7msvaon]
+{
+    color: #1c1c1c;
+}
 /* /Pages/Companies/Water.razor.rz.scp.css */
 .mainHolder[b-0chmhzq9jo] {
     padding: 2rem 4rem 4rem;
@@ -187,49 +238,6 @@ th[b-0chmhzq9jo] {
     background-color: #F1FAEE;
     height: 100rem;
     border-radius: 10px;
-}
-/* /Pages/Providers.razor.rz.scp.css */
-.mainHolder[b-2d12ez9ru6]
-{
-    padding: 2rem 4rem 4rem;
-    margin: 1rem 10% 10%;
-    vertical-align: top;
-    align-items: center;
-    background-color: #F1FAEE;
-    height: 45rem;
-    width: 45rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    gap: 1rem;
-    font-size: 3rem;
-}
-
-.centered[b-2d12ez9ru6]
-{
-    width: 50%;
-    margin: auto;
-    text-align: center;
-}
-
-.sideHolder[b-2d12ez9ru6]
-{
-    text-align: center;
-    border-style: solid;
-    border-radius: 5px;
-    border-color: #1D3557;
-    width: 15rem;
-    background-color: rgba(69, 123, 157, 0.3);
-}
-
-.sideHolder:hover[b-2d12ez9ru6] {
-    background-color: rgba(69, 123, 157, 0.1);
-    color: #1D3557;
-}
-
-.sideHolder:active[b-2d12ez9ru6] {
-    background-color: rgba(69, 123, 157, 1);
-    color: #1D3557;
 }
 /* /Pages/Register.razor.rz.scp.css */
 .mainHolder[b-5t8cvge0o1]
@@ -399,58 +407,58 @@ main[b-e1ogp90w9a] {
 i[b-te5xu9m4o3] {
     margin-right: 5px;
 }
-/*
-.nav-item {
-    font-size: 0.9rem;
-    padding-bottom: 0.5rem;
+
+.nav-item[b-te5xu9m4o3]
+{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: rgba(168, 218, 220, 0.1);
 }
 
-    .nav-item:first-of-type {
-        padding-top: 1rem;
-    }
-
-    .nav-item:last-of-type {
-        padding-bottom: 1rem;
-    }
-
-    .nav-item ::deep a {
-        color: #457B9D;
-        border-radius: 4px;
-        height: 3rem;
-        display: flex;
-        align-items: center;
-        line-height: 3rem;
-    }
-
-.nav-item ::deep a.active {
-    background-color: rgba(69, 123, 157, 0.25);
-    color: #1D3557;
+.nav-item:hover[b-te5xu9m4o3]
+{
+    background-color: rgba(168, 218, 220, 0.4);
 }
 
-.nav-item ::deep a:hover {
-    background-color: rgba(69, 123, 157, 0.1);
-    color: #1D3557;
+.nav-item:focus[b-te5xu9m4o3]
+{
+    background-color: rgba(168, 218, 220, 0.8);
 }
-*/
 
 .dropdown[b-te5xu9m4o3]
 {
-    position: relative;
-    display: inline-block;
+    width: 100%;
 }
 
 .dropdown-content[b-te5xu9m4o3] {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #F1FAEE;
+    width: 100%;
     padding: 12px 16px;
-    z-index: 1;
 }
 
 .dropdown:hover .dropdown-content[b-te5xu9m4o3] {
-    display: block;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-content-item[b-te5xu9m4o3]
+{
+    background-color: rgba(168, 218, 220, 0.1);
+    width: 100%;
+}
+
+.dropdown-content-item:hover[b-te5xu9m4o3]
+{
+    background-color: rgba(168, 218, 220, 0.4);
+}
+
+.dropdown-content-item:focus[b-te5xu9m4o3]
+{
+    background-color: rgba(168, 218, 220, 0.8);
 }
 /* /Shared/TopBar.razor.rz.scp.css */
 .icon-client[b-u8wv99off7] {

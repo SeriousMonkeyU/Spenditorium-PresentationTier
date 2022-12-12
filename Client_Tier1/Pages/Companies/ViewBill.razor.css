@@ -1,0 +1,50 @@
+.mainHolder 
+{
+    padding: 2rem 4rem 4rem;
+    margin: 1rem 10% 10%;
+    text-align: left;
+    vertical-align: top;
+    background-color: #F1FAEE;
+    width: 80%;
+    
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.bill-header
+{
+    border-bottom-style: solid;
+    border-bottom-color: rgba(69, 123, 157, 1);
+}
+
+.bill-item
+{
+    border-radius: 12px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(69, 123, 157, 0.5);
+    padding: 4px;
+}
+
+.bill-item-category
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.space
+{
+    padding: 2rem;
+}
+
+.even-coloring
+{
+    background-color: #A8DADC;
+}
+
+.text-color
+{
+    color: #1c1c1c;
+}

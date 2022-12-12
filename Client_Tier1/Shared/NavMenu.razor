@@ -9,18 +9,21 @@
 
 <div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
     <nav class="navbar-holder">
-        <div onclick="@RedirectToHome">
+        <div class="nav-item px-3" onclick="@RedirectToHome">
             <i class="fa fa-cloud">
                 <span class="oi oi-home" aria-hidden="true"></span>
             </i> Home
         </div>
-        <div class="nav-item px-3">
+        <div class="nav-item px-3 dropdown">
             <i class="fa fa-cloud">
-                <span class="oi oi-folder dropdown"> Providers</span>
+                <span class="oi oi-folder" aria-hidden="true"></span>
                 <div class="dropdown-content">
-                    hello?
+                    <div class="dropdown-content-item" type="button" onclick="@RedirectToElectricity">Electricity</div>
+                    <div class="dropdown-content-item" type="button" onclick="@RedirectToHeating">Heating</div>
+                    <div class="dropdown-content-item" type="button" onclick="@RedirectToHousing">Housing</div>
+                    <div class="dropdown-content-item" type="button" onclick="@RedirectToWater">Water</div>
                 </div>
-            </i>
+            </i> Providers
         </div>
     </nav>
 </div>
@@ -38,6 +41,23 @@
     private void RedirectToHome()
     {
         nav.NavigateTo($"/");
+    }
+
+    private void RedirectToElectricity()
+    {
+        nav.NavigateTo($"/Electricity");
+    }
+    private void RedirectToHeating()
+    {
+        nav.NavigateTo($"/Heating");
+    }
+    private void RedirectToHousing()
+    {
+        nav.NavigateTo($"/Housing");
+    }
+    private void RedirectToWater()
+    {
+        nav.NavigateTo($"/Water");
     }
 
 }
