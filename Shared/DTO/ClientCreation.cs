@@ -1,3 +1,5 @@
+using Shared.Models;
+
 namespace Shared.DTO;
 
 public class ClientCreation
@@ -9,10 +11,11 @@ public class ClientCreation
     public string email { get; }
     public string dob { get; }
     public long phoneNumber { get; }
+    public List<Bill> bills { get; }
     public bool[] suscriptions { get; } // 0 - Electricity, 1 - Heating, 2 - Housing, 3 - Water
 
     public ClientCreation(string username, string password, string name, string email, string dob,
-        long phoneNumber, bool[] subscriptions)
+        long phoneNumber, List<Bill> bills, bool[] subscriptions)
     {
         this.username = username;
         this.password = password;
@@ -22,6 +25,7 @@ public class ClientCreation
         this.phoneNumber = phoneNumber;
         this.suscriptions = new bool[4];
         this.suscriptions = subscriptions;
+        this.bills = new List<Bill>();
     }
 
     public override String ToString()
