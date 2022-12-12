@@ -1,0 +1,103 @@
+@page "/ViewBill/{parameter}"
+@using global::Shared.Models
+
+<div class="mainHolder">
+    <div class="bill-header">
+        <h3>The bill</h3>
+    </div>
+    <div class="bill-item even-coloring">
+        <span class="bill-item-category text-color">
+            <div>Number of the bill: </div>
+            <div>@bill.id</div>
+        </span>
+    </div>
+    <div class="bill-item even-coloring">
+        <span class="bill-item-category text-color">
+            <div>Date: </div>
+            <div></div>
+            <div>@bill.billingdate.ToShortDateString()</div> -
+            <div>@bill.duedate.ToShortDateString()</div>
+        </span>
+    </div>
+    <div class="bill-item even-coloring">
+        <span class="bill-item-category text-color">
+            <div>Current market price: </div>
+            <div>@bill.priceperitem dkk per @companyUnit</div>
+        </span>
+    </div>
+    <div class="bill-item even-coloring">
+        <span class="bill-item-category text-color">
+            <div>Amount used: </div>
+            <div>@bill.amount @companyUnit</div>
+        </span>
+    </div>
+    <div class="space"></div>
+    <div class="bill-header"></div>
+    <div class="bill-item even-coloring">
+        <span class="bill-item-category text-color">
+            <div>Total amount to pay: </div>
+            <div>@bill.total dkk</div>
+        </span>
+    </div>
+    <div class="bill-item even-coloring">
+        <span class="bill-item-category text-color">
+            <div>Is paid?: </div>
+            <div>@bill.paidstatus</div>
+        </span>
+    </div>
+
+</div>
+
+
+@code {
+
+    [Parameter]
+    public string? parameter { get; set; }
+
+    private int id { get; set; }
+
+    private List<Bill> bills = new List<Bill>();
+    private Bill bill;
+
+    private string companyUnit = "";
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+
+
+    // Here should be method to request bills----------------------------
+
+        bills.Add(bill = new Bill(1, 1, DateTime.Now, DateTime.Now, 55, 150, 1, "Electricity", false));
+
+    // After getting the bills----------------------------
+
+        try
+        {
+            id = int.Parse(parameter);
+            bill = bills[id - 1];
+
+            switch (bill.provider)
+            {
+                case "Electricity":
+                    companyUnit = "kWh";
+                    break;
+                case "Heating":
+                    companyUnit = "m^3";
+                    break;
+                case "Housing":
+                    companyUnit = "month";
+                    break;
+                case "Water":
+                    companyUnit = "m^3";
+                    break;
+            }
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
+    }
+
+}

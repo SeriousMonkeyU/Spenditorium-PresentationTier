@@ -83,9 +83,7 @@ public class JwtAuthService : IAuthService
         ClaimsPrincipal principal = CreateClaimsPrincipal();
         return Task.FromResult(principal);
     }
-
-
-    // Below methods stolen from https://github.com/SteveSandersonMS/presentation-2019-06-NDCOslo/blob/master/demos/MissionControl/MissionControl.Client/Util/ServiceExtensions.cs
+    
     private static IEnumerable<Claim> ParseClaimsFromJwt(string jwt)
     {
         string payload = jwt.Split('.')[1];

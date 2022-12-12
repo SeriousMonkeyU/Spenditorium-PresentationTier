@@ -50,6 +50,10 @@ build_metadata.AdditionalFiles.CssScope = b-uy0vlg8pwy
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcGFuaWVzXEhvdXNpbmcucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-cplwvizjc0
 
+[C:/Denmark studies/3rd semester/Spenditorium/GitCode/PresentationTier/Client_Tier1/Pages/Companies/ViewBill.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcGFuaWVzXFZpZXdCaWxsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-zuk7msvaon
+
 [C:/Denmark studies/3rd semester/Spenditorium/GitCode/PresentationTier/Client_Tier1/Pages/Companies/Water.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcGFuaWVzXFdhdGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-0chmhzq9jo
@@ -57,10 +61,6 @@ build_metadata.AdditionalFiles.CssScope = b-0chmhzq9jo
 [C:/Denmark studies/3rd semester/Spenditorium/GitCode/PresentationTier/Client_Tier1/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-fv7a5lpsma
-
-[C:/Denmark studies/3rd semester/Spenditorium/GitCode/PresentationTier/Client_Tier1/Pages/Providers.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvdmlkZXJzLnJhem9y
-build_metadata.AdditionalFiles.CssScope = b-2d12ez9ru6
 
 [C:/Denmark studies/3rd semester/Spenditorium/GitCode/PresentationTier/Client_Tier1/Pages/Register.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIucmF6b3I=
