@@ -43,6 +43,141 @@ th[b-gmz283c75z] {
     border-radius: 150px;
     color: #1D3557;
 }
+/* /Pages/Companies/Heating.razor.rz.scp.css */
+.mainHolder[b-uy0vlg8pwy] {
+    padding: 2rem 4rem 4rem;
+    margin: 1rem 10% 10%;
+    text-align: left;
+    vertical-align: top;
+    background-color: #F1FAEE;
+    width: 80%;
+}
+
+table[b-uy0vlg8pwy] {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+tr:nth-child(odd)[b-uy0vlg8pwy]
+{
+    background-color: #DCF3D4;
+}
+
+th[b-uy0vlg8pwy] {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #457B9D;
+    color: white;
+}
+
+
+.collapsed-content[b-uy0vlg8pwy] {
+    position: sticky;
+    width: 100%;
+}
+
+.collapsed-components[b-uy0vlg8pwy] {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(168, 218, 220, 0.2);
+    border-radius: 150px;
+    color: #1D3557;
+}
+/* /Pages/Companies/Housing.razor.rz.scp.css */
+.mainHolder[b-cplwvizjc0] {
+    padding: 2rem 4rem 4rem;
+    margin: 1rem 10% 10%;
+    text-align: left;
+    vertical-align: top;
+    background-color: #F1FAEE;
+    width: 80%;
+}
+
+table[b-cplwvizjc0] {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+tr:nth-child(odd)[b-cplwvizjc0]
+{
+    background-color: #DCF3D4;
+}
+
+th[b-cplwvizjc0] {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #457B9D;
+    color: white;
+}
+
+
+.collapsed-content[b-cplwvizjc0] {
+    position: sticky;
+    width: 100%;
+}
+
+.collapsed-components[b-cplwvizjc0] {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(168, 218, 220, 0.2);
+    border-radius: 150px;
+    color: #1D3557;
+}
+/* /Pages/Companies/Water.razor.rz.scp.css */
+.mainHolder[b-0chmhzq9jo] {
+    padding: 2rem 4rem 4rem;
+    margin: 1rem 10% 10%;
+    text-align: left;
+    vertical-align: top;
+    background-color: #F1FAEE;
+    width: 80%;
+}
+
+table[b-0chmhzq9jo] {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+tr:nth-child(odd)[b-0chmhzq9jo]
+{
+    background-color: #DCF3D4;
+}
+
+th[b-0chmhzq9jo] {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #457B9D;
+    color: white;
+}
+
+
+.collapsed-content[b-0chmhzq9jo] {
+    position: sticky;
+    width: 100%;
+}
+
+.collapsed-components[b-0chmhzq9jo] {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(168, 218, 220, 0.2);
+    border-radius: 150px;
+    color: #1D3557;
+}
 /* /Pages/Index.razor.rz.scp.css */
 .mainHolder[b-fv7a5lpsma]
 {
@@ -264,21 +399,21 @@ main[b-e1ogp90w9a] {
 i[b-te5xu9m4o3] {
     margin-right: 5px;
 }
-
-.nav-item[b-te5xu9m4o3] {
+/*
+.nav-item {
     font-size: 0.9rem;
     padding-bottom: 0.5rem;
 }
 
-    .nav-item:first-of-type[b-te5xu9m4o3] {
+    .nav-item:first-of-type {
         padding-top: 1rem;
     }
 
-    .nav-item:last-of-type[b-te5xu9m4o3] {
+    .nav-item:last-of-type {
         padding-bottom: 1rem;
     }
 
-    .nav-item[b-te5xu9m4o3]  a {
+    .nav-item ::deep a {
         color: #457B9D;
         border-radius: 4px;
         height: 3rem;
@@ -287,16 +422,36 @@ i[b-te5xu9m4o3] {
         line-height: 3rem;
     }
 
-.nav-item[b-te5xu9m4o3]  a.active {
+.nav-item ::deep a.active {
     background-color: rgba(69, 123, 157, 0.25);
     color: #1D3557;
 }
 
-.nav-item[b-te5xu9m4o3]  a:hover {
+.nav-item ::deep a:hover {
     background-color: rgba(69, 123, 157, 0.1);
     color: #1D3557;
 }
+*/
 
+.dropdown[b-te5xu9m4o3]
+{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content[b-te5xu9m4o3] {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content[b-te5xu9m4o3] {
+    display: block;
+}
 /* /Shared/TopBar.razor.rz.scp.css */
 .icon-client[b-u8wv99off7] {
     text-align: right;

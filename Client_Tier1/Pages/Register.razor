@@ -55,7 +55,7 @@
             string tempdob = Dob.ToShortDateString();
             tempdob = Dob.ToString("MM/dd/yyyy");
             
-            ClientCreation account = new ClientCreation(Username, Password, FName, Email, tempdob, Pn, subscriptions);
+            ClientCreation account = new ClientCreation(Username, Password, FName, Email, tempdob, Pn, new List<Bill>(),subscriptions);
             await authService.RegisterAsync(account);
             nav.NavigateTo($"/");
         }
