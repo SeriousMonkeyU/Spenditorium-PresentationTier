@@ -15,7 +15,7 @@
         <label for="dob">Date of Birth: </label>
         <input type="date" id="dob" name="dob" @bind="Dob" @oninput="@((e) => { Dob = (DateTime)e.Value; })">
         <label for="phone">Phone number: </label>
-        <input type="text" id="phone" name="phoneNumber" @bind="Pn" @oninput="@((e) => { Pn = (long)e.Value; })">
+        <input type="text" id="phone" name="phoneNumber" @bind="Pn" @oninput="@((e) => { Pn = (string)e.Value; })">
         <label for="username">Username: </label>
         <input type="text" id="username" name="username" minlength="3" @bind="Username" @oninput="@((e) => { Username = (string)e.Value; })" required>
         <label for="password">Password: </label>
@@ -43,21 +43,22 @@
     private string FName { get; set; } = "";
     private string Email { get; set; } = "";
     private DateTime Dob { get; set; } = new(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
-    private long Pn { get; set; } = 11111111;
+    private string Pn { get; set; } = "11111111";
     private bool[] subscriptions = new bool[4]; // 0 - Electricity, 1 - Heating, 2 - Housing, 3 - Water
 
     private string error { get; set; } = "";
 
     private async Task TryRegistration()
     {
-        if ((Username.Length > 3 && Username.Length < 16) && (Password.Length > 3 && Password.Length < 16) && (FName.Length > 1 && FName.Length < 50) && (Email.Contains("@") && Email.Length > 3 && Email.Length < 50) && (Pn > 9999999 && Pn < 100000000))
+        if ((Username.Length > 3 && Username.Length < 16) && (Password.Length > 3 && Password.Length < 16) && (FName.Length > 1 && FName.Length < 50) && (Email.Contains("@") && Email.Length > 3 && Email.Length < 50) && (Pn.Length > 7 && Pn.Length < 9))
         {
             string tempdob = Dob.ToShortDateString();
             tempdob = Dob.ToString("MM/dd/yyyy");
             
             ClientCreation account = new ClientCreation(Username, Password, FName, Email, tempdob, Pn, new List<Bill>(),subscriptions);
+            error = account.ToString();
             await authService.RegisterAsync(account);
-            nav.NavigateTo($"/");
+            //nav.NavigateTo($"/");
         }
         else error = "Invalid input items";
     }
