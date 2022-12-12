@@ -3,7 +3,6 @@
 @using Client_Tier1.Service
 @using BlazorWasm.Services.Http
 @using System.Text.Json
-@inject IClientService _clientService
 @inject IAuthService _authService
 @inject NavigationManager nav;
 
@@ -21,14 +20,14 @@
         </tr>
         </thead>
         <tbody>
-        @foreach (var item in bills.getBills())
+        @foreach (var item in bills)
         {
             <tr onclick="@ToggleNavMenu">
                 <td>№ @item.id</td>
                 <td>@item.billingdate.Date.ToString("d")</td>
                 <td>@item.duedate.Date.ToString("d")</td>
                 <td>@item.total dkk</td>
-                <td>@item.payedstatus</td>
+                <td>@item.paidstatus</td>
             </tr>
             <tr class="@TopMenuCssClass collapsed-content">
                 <td colspan="5"><div class="collapsed-components">Hello?</div></td>
@@ -46,11 +45,11 @@
     
     private string CompanyName { get; set; } = "Elektron";
 
-    private Bills bills = new Bills();
+    private List<Bill> bills = new List<Bill>();
 
     private void Refresh()
     {
-        bills.getBills().Add(new Bill(1, 1, DateTime.Now, DateTime.Now, 32424, 50, 1, "Elektron", true));
+        bills.Add(new Bill(1, 1, DateTime.Now, DateTime.Now, 32424, 50, 1, "Elektron", true));
     }
     
 

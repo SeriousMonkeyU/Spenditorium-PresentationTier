@@ -10,7 +10,7 @@ public class Bill
     public double priceperitem { get; set; }
     public double amount { get; set; }
     public string provider { get; set; }
-    public bool payedstatus { get; set; }
+    public bool paidstatus { get; set; }
     
     
     public Bill(int id, int userid, DateTime billingdate, DateTime duedate, double amount, double total, double priceperitem,
@@ -22,14 +22,14 @@ public class Bill
         this.duedate = duedate;
         this.total = total;
         this.priceperitem = priceperitem;
-        this.provider = company;
-        this.payedstatus = payedstatus;
+        provider = company;
+        paidstatus = payedstatus;
         this.amount = amount;
     }
 
     public override string ToString()
     {
         return id + ", " + clientid + ", " + billingdate + ", " + duedate + ", " + total + ", " + priceperitem + ", " +
-               provider + ", " + payedstatus;
+               provider + ", " + paidstatus;
     }
 }

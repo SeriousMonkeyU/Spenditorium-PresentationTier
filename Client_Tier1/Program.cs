@@ -17,7 +17,6 @@ builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthProvider>();
 
 builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthProvider>();
 builder.Services.AddScoped<IAuthService, JwtAuthService>();
-builder.Services.AddScoped<IClientService, ClientService>();
 
 
 AuthorizationPolicies.AddPolicies(builder.Services);
