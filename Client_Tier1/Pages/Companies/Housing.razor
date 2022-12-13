@@ -1,19 +1,83 @@
 @page "/Housing"
 @using global::Shared.Models
 @using Client_Tier1.Service
-<h3>@CompanyName</h3>
+@inject NavigationManager nav;
+@inject IClientService _clientService
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
+
+@if (isSubscribed)
+{
+    <div class="mainHolder">
+        <h3>@CompanyName.ToUpper()</h3>
+        <br>
+        <table class="bills">
+            <thead>
+            <tr>
+                <th>Billing number</th>
+                <th>Billing date</th>
+                <th>Due date</th>
+                <th>Usage</th>
+                <th>Price per unit</th>
+                <th>Total to pay</th>
+                <th>Is payed</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var item in bills)
+            {
+                <tr @onclick="() => RedirectToViewBill(item.id)">
+                    <td>№ @item.id</td>
+                    <td>@item.billingdate.Date.ToString("d")</td>
+                    <td>@item.duedate.Date.ToString("d")</td>
+                    <td>@item.amount</td>
+                    <td>@item.priceperitem</td>
+                    <td>@item.total dkk</td>
+                    <td>@item.paidstatus</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+}
+
+@if (isSubscribed == false)
+{
+    <div class="mainHolder">
+        <div>
+            We are sorry, but unfortunetally,
+            you are not subscribed to that provider, or
+            you do not have bills to pay... yet?
+        </div>
+    </div>
+}
 
 @code {
-    private string CompanyName { get; set; } = "Bolig Portal";
+
+    private int id { get; set; } = -1;
+        private const string idName = "id";
+
+    // -----------------------------------------------
+
+    private bool isSubscribed = false;
+
+    private string CompanyName { get; set; } = "housing";
 
     private List<Bill> bills = new List<Bill>();
 
-    
-    /*
+    private void RedirectToViewBill(int id)
+    {
+        string tempParam = new(CompanyName + "/" + id);
+        nav.NavigateTo($"/ViewBill/{id.ToString()}");
+    }
+
     protected override async Task OnInitializedAsync()
     {
-        // Gets id from claims, and Company name "Electricity" to parse it to "GetBillsById" and return a list of bills
-        bills = await _clientService.GetBillsById(JsonSerializer.Deserialize<int>(_authService.GetAuthAsync().Result.FindFirst("id")?.Value), "Housing");
+        id = await localStorage.GetItemAsync<int>(idName);
+
+        bills = await _clientService.GetBillsById(id, CompanyName);
+
+        if (bills is null) isSubscribed = false;
+        if (bills is not null) isSubscribed = true;
     }
-*/
+
 }

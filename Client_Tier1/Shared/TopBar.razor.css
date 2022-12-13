@@ -6,17 +6,27 @@
 
 .collapsed-content {
     position: sticky;
+    background-color: rgba(69, 123, 157, 0.95);
+    border-radius: 5px;
+}
+
+.unAuth
+{
     width: 20rem;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.doAuth
+{
+    height: 10rem;
+    flex-direction: column;
+    gap: 0;
 }
 
 .collapsed-components {
-    padding: 1rem;
+    padding: 0.3rem;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background-color: #457B9D;
-    border-radius: 5px;
-    color: white;
 }
 
 .buttons
@@ -24,16 +34,29 @@
     padding-top: 1rem;
     padding-right: 1rem;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
-.buttonsAuth
+.buttonAuthorised
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 1rem;
-    margin: auto;
-    width: 40%;
+    margin: auto 0 auto auto;
+    background-color: #A8DADC;
+    border-radius: 2rem;
+    padding: 4px;
+    width: fit-content;
+}
+
+.buttonAuthorised:hover
+{
+    background-color: #84aeb0;
+    color: #d7f3f5;
+}
+
+.text-color-authorise
+{
+    color: gainsboro;
+}
+
+.errorLabel
+{
+    color: red;
 }

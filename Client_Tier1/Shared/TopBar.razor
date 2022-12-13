@@ -3,42 +3,55 @@
 @using global::Shared.Models
 @inject NavigationManager nav;
 @inject IClientService _clientService;
-@inject LocalClient lClient;
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
 
 <img class="icon-client" src="images/client.png" alt="Authorize" onclick="@ToggleNavMenu">
-@if (lClient.authorized == false)
+@if (authState == false)
 {
     <div class="@TopMenuCssClass collapsed-content">
-        <div class="collapsed-components">
-            <p>Username: </p>
+        <div class="collapsed-components unAuth">
+            <p class="text-color-authorise">Username: </p>
             <input type="text" id="username" name="username" minlength="3" @bind="Username" @oninput="@((e) => { Username = (string)e.Value; })" required>
-            <p>Password: </p>
+            <p class="text-color-authorise">Password: </p>
             <input type="password" id="password" name="password" minlength="3" @bind="Password" @oninput="@((e) => { Password = (string)e.Value; })" required>
             <div class="buttons">
-                <button type="button" onclick="@TryLogin">Log In</button>
-                <button type="button" onclick="@RedirectToRegister">Sign Up</button>
+                <div class="buttonAuthorised" type="button" onclick="@TryLogin">Log In</div>
+                <div class="buttonAuthorised" type="button" onclick="@RedirectToRegister">Sign Up</div>
             </div>
+            <p class="errorLabel">@error</p>
         </div>
     </div>
 }
-else
+
+@if (authState)
 {
     <div class="@TopMenuCssClass collapsed-content">
-        <div class="collapsed-components">
-            <div class="buttonsAuth">
-                <button type="button" onclick="@RedirectToProfile">Profile page</button>
-                <button type="button" onclick="@TryLogout">Logout</button>
-            </div>
+        <div class="collapsed-components doAuth">
+            <div class="buttonAuthorised" type="button" onclick="@RedirectToProfile">Profile page</div>
+            <div class="buttonAuthorised" type="button" onclick="@TryLogout">Logout</div>
         </div>
     </div>
 }
 
 @code {
+
+    //-------------Auth var--------------------------
+
+    private bool authState { get; set; } = false;
+        private const string authStateName = "state";
+
+    private int id { get; set; } = -1;
+        private const string idName = "id";
+
+    //-----------------------------------------------
+
     private bool collapseAuthorize = true;
     private string? TopMenuCssClass => collapseAuthorize ? "collapse" : null;
 
     private string Username = "";
     private string Password = "";
+
+    private string error { get; set; } = "";
 
 
     private void ToggleNavMenu()
@@ -46,19 +59,35 @@ else
         collapseAuthorize = !collapseAuthorize;
     }
 
+    // Method makes a request to Business logic and adjusts Auth variables
     private async void TryLogin()
     {
         if (Username.Length > 3 && Username.Length < 16 && Password.Length > 3 & Password.Length < 16)
         {
-            await _clientService.LoginAsync(Username, Password);
-            ToggleNavMenu();
-            nav.NavigateTo("/");
+            int tempId = await _clientService.LoginAsync(Username, Password);
+            if (tempId != -1)
+            {
+                await localStorage.SetItemAsync(authStateName, true);
+                await localStorage.SetItemAsync(idName, tempId);
+                ToggleNavMenu();
+                nav.NavigateTo($"/", forceLoad: true);
+            }
+            else
+            {
+                await localStorage.SetItemAsync(authStateName, false);
+                await localStorage.SetItemAsync(idName, -1);
+                error = "Invalid login credentials";
+            }
         }
+        else error = "Invalid login credentials";
     }
 
+    // Method Resets Auth variables
     private async void TryLogout()
     {
-        await _clientService.LogoutAsync();
+        await localStorage.SetItemAsync<int>(idName, id);
+        await localStorage.SetItemAsync<bool>(authStateName, false);
+        nav.NavigateTo($"/", forceLoad: true);
     }
 
     private void RedirectToRegister()
@@ -73,4 +102,11 @@ else
         nav.NavigateTo($"/Profile");
     }
 
-}
+
+    // Method updates Auth variables
+    protected override async Task OnInitializedAsync()
+    {
+        authState = await localStorage.GetItemAsync<bool>(authStateName);
+        id = await localStorage.GetItemAsync<int>(idName);
+    }
+    }

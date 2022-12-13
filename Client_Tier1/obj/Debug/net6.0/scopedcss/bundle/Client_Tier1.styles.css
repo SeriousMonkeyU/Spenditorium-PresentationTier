@@ -469,17 +469,27 @@ i[b-te5xu9m4o3] {
 
 .collapsed-content[b-u8wv99off7] {
     position: sticky;
+    background-color: rgba(69, 123, 157, 0.95);
+    border-radius: 5px;
+}
+
+.unAuth[b-u8wv99off7]
+{
     width: 20rem;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.doAuth[b-u8wv99off7]
+{
+    height: 10rem;
+    flex-direction: column;
+    gap: 0;
 }
 
 .collapsed-components[b-u8wv99off7] {
-    padding: 1rem;
+    padding: 0.3rem;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background-color: #457B9D;
-    border-radius: 5px;
-    color: white;
 }
 
 .buttons[b-u8wv99off7]
@@ -487,16 +497,29 @@ i[b-te5xu9m4o3] {
     padding-top: 1rem;
     padding-right: 1rem;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
-.buttonsAuth[b-u8wv99off7]
+.buttonAuthorised[b-u8wv99off7]
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 1rem;
-    margin: auto;
-    width: 40%;
+    margin: auto 0 auto auto;
+    background-color: #A8DADC;
+    border-radius: 2rem;
+    padding: 4px;
+    width: fit-content;
+}
+
+.buttonAuthorised:hover[b-u8wv99off7]
+{
+    background-color: #84aeb0;
+    color: #d7f3f5;
+}
+
+.text-color-authorise[b-u8wv99off7]
+{
+    color: gainsboro;
+}
+
+.errorLabel[b-u8wv99off7]
+{
+    color: red;
 }
