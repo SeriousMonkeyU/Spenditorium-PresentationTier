@@ -1,37 +1,37 @@
 @using global::Shared.DTO
-@using BlazorWasm.Services
 @using Client_Tier1.Service
+@using global::Shared.Models
 @inject NavigationManager nav;
-@inject IAuthService authService
+@inject IClientService _clientService;
+@inject LocalClient lClient;
 
 <img class="icon-client" src="images/client.png" alt="Authorize" onclick="@ToggleNavMenu">
-
-<AuthorizeView>
-    <NotAuthorized>
-        <div class="@TopMenuCssClass collapsed-content">
-            <div class="collapsed-components">
-                <p>Username: </p>
-                <input type="text" id="username" name="username" minlength="3" @bind="Username" @oninput="@((e) => { Username = (string)e.Value; })" required>
-                <p>Password: </p>
-                <input type="password" id="password" name="password" minlength="3" @bind="Password" @oninput="@((e) => { Password = (string)e.Value; })" required>
-                <div class="buttons">
-                    <button type="button" onclick="@TryLogin">Log In</button>
-                    <button type="button" onclick="@RedirectToRegister">Sign Up</button>
-                </div>
+@if (lClient.authorized == false)
+{
+    <div class="@TopMenuCssClass collapsed-content">
+        <div class="collapsed-components">
+            <p>Username: </p>
+            <input type="text" id="username" name="username" minlength="3" @bind="Username" @oninput="@((e) => { Username = (string)e.Value; })" required>
+            <p>Password: </p>
+            <input type="password" id="password" name="password" minlength="3" @bind="Password" @oninput="@((e) => { Password = (string)e.Value; })" required>
+            <div class="buttons">
+                <button type="button" onclick="@TryLogin">Log In</button>
+                <button type="button" onclick="@RedirectToRegister">Sign Up</button>
             </div>
         </div>
-    </NotAuthorized>
-    <Authorized>
-        <div class="@TopMenuCssClass collapsed-content">
-            <div class="collapsed-components">
-                <div class="buttonsAuth">
-                    <button type="button" onclick="@RedirectToProfile">Profile page</button>
-                    <button type="button" onclick="@TryLogout">Logout</button>
-                </div>
+    </div>
+}
+else
+{
+    <div class="@TopMenuCssClass collapsed-content">
+        <div class="collapsed-components">
+            <div class="buttonsAuth">
+                <button type="button" onclick="@RedirectToProfile">Profile page</button>
+                <button type="button" onclick="@TryLogout">Logout</button>
             </div>
         </div>
-    </Authorized>
-</AuthorizeView>
+    </div>
+}
 
 @code {
     private bool collapseAuthorize = true;
@@ -50,7 +50,7 @@
     {
         if (Username.Length > 3 && Username.Length < 16 && Password.Length > 3 & Password.Length < 16)
         {
-            await authService.LoginAsync(Username, Password);
+            await _clientService.LoginAsync(Username, Password);
             ToggleNavMenu();
             nav.NavigateTo("/");
         }
@@ -58,7 +58,7 @@
 
     private async void TryLogout()
     {
-        await authService.LogoutAsync();
+        await _clientService.LogoutAsync();
     }
 
     private void RedirectToRegister()

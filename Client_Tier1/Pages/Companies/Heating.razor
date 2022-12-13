@@ -1,20 +1,67 @@
 @page "/Heating"
 @using global::Shared.Models
 @using Client_Tier1.Service
-@inject IAuthService _authService
-<h3>@CompanyName</h3>
+@inject IClientService _clientService
+@inject NavigationManager nav;
+
+<div class="mainHolder">
+    <h3>@CompanyName</h3>
+    <br>
+    <table class="bills">
+        <thead>
+        <tr>
+            <th>Billing number</th>
+            <th>Billing date</th>
+            <th>Due date</th>
+            <th>Usage</th>
+            <th>Price per unit</th>
+            <th>Total to pay</th>
+            <th>Is payed</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in bills)
+        {
+            <tr @onclick="()=>RedirectToViewBill(item.id)">
+                <td>№ @item.id</td>
+                <td>@item.billingdate.Date.ToString("d")</td>
+                <td>@item.duedate.Date.ToString("d")</td>
+                <td>@item.amount</td>
+                <td>@item.priceperitem</td>
+                <td>@item.total dkk</td>
+                <td>@item.paidstatus</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+    <button type="button" id="refresh" onclick="@Refresh">Refresh</button>
+</div>
 
 @code {
-    private string CompanyName { get; set; } = "Heatron";
+
+    private bool collapseAuthorize = true;
+    private string? TopMenuCssClass => collapseAuthorize ? "collapse" : null;
+    
+    private string CompanyName { get; set; } = "Heating";
 
     private List<Bill> bills = new List<Bill>();
 
+    private void Refresh()
+    {
+        bills.Add(new Bill(1, 1, DateTime.Now, DateTime.Now, 32424, 50, 1, "Heating", true));
+    }
 
+    private void RedirectToViewBill(int id)
+    {
+        nav.NavigateTo($"/ViewBill/{id.ToString()}");
+    }
+    
     /*
     protected override async Task OnInitializedAsync()
     {
-        // Gets id from claims, and Company name "Heating" to parse it to "GetBillsById" and return a list of bills
-        bills = await _clientService.GetBillsById(JsonSerializer.Deserialize<int>(_authService.GetAuthAsync().Result.FindFirst("id")?.Value), "Heating");
+        // Gets id from claims, and Company name "Electricity" to parse it to "GetBillsById" and return a list of bills
+        bills = await _clientService.GetBillsByUsername(JsonSerializer.Deserialize<string>(_authService.GetAuthAsync().Result.FindFirst("id")?.Value), "Electricity");
     }
 */
+
 }

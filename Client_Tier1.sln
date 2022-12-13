@@ -2,8 +2,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client_Tier1", "Client_Tier1\Client_Tier1.csproj", "{AF8E1BB1-0E6A-4204-BE8F-D624A168988A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{B96B4392-004E-4AFB-ADA8-3BFE048462F0}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{F89762BE-7B30-407F-9850-F1DB00BC5E46}"
 EndProject
 Global
@@ -16,10 +14,6 @@ Global
 		{AF8E1BB1-0E6A-4204-BE8F-D624A168988A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF8E1BB1-0E6A-4204-BE8F-D624A168988A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF8E1BB1-0E6A-4204-BE8F-D624A168988A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B96B4392-004E-4AFB-ADA8-3BFE048462F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B96B4392-004E-4AFB-ADA8-3BFE048462F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B96B4392-004E-4AFB-ADA8-3BFE048462F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B96B4392-004E-4AFB-ADA8-3BFE048462F0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F89762BE-7B30-407F-9850-F1DB00BC5E46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F89762BE-7B30-407F-9850-F1DB00BC5E46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F89762BE-7B30-407F-9850-F1DB00BC5E46}.Release|Any CPU.ActiveCfg = Release|Any CPU

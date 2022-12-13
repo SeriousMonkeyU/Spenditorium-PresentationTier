@@ -1,9 +1,8 @@
 @page "/authentication/register"
 @using global::Shared.DTO
-@using BlazorWasm.Services
 @using Client_Tier1.Service
 @using global::Shared.Models
-@inject IAuthService authService
+@inject IClientService _clientService
 @inject NavigationManager nav;
 
 <div class="centered">
@@ -57,7 +56,7 @@
             
             ClientCreation account = new ClientCreation(Username, Password, FName, Email, tempdob, Pn, new List<Bill>(),subscriptions);
             error = account.ToString();
-            await authService.RegisterAsync(account);
+            await _clientService.RegisterAsync(account);
             //nav.NavigateTo($"/");
         }
         else error = "Invalid input items";

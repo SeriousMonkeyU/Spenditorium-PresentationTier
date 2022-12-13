@@ -1,9 +1,6 @@
 @page "/Electricity"
 @using global::Shared.Models
 @using Client_Tier1.Service
-@using BlazorWasm.Services.Http
-@using System.Text.Json
-@inject IAuthService _authService
 @inject IClientService _clientService
 @inject NavigationManager nav;
 
@@ -16,8 +13,6 @@
             <th>Billing number</th>
             <th>Billing date</th>
             <th>Due date</th>
-            <th>Usage</th>
-            <th>Price per unit</th>
             <th>Total to pay</th>
             <th>Is payed</th>
         </tr>
@@ -29,8 +24,6 @@
                 <td>№ @item.id</td>
                 <td>@item.billingdate.Date.ToString("d")</td>
                 <td>@item.duedate.Date.ToString("d")</td>
-                <td>@item.amount</td>
-                <td>@item.priceperitem</td>
                 <td>@item.total dkk</td>
                 <td>@item.paidstatus</td>
             </tr>
@@ -51,7 +44,10 @@
 
     private void Refresh()
     {
-        bills.Add(new Bill(1, 1, DateTime.Now, DateTime.Now, 32424, 50, 1, "Elektron", true));
+        bills.Add(new Bill(1, 1, DateTime.Now, DateTime.Now, 32424, 50, 1, "Electricity", true));
+        bills.Add(new Bill(2, 1, DateTime.Now, DateTime.Now, 55, 150, 1, "Heating", false));
+        bills.Add(new Bill(3, 1, DateTime.Now, DateTime.Now, 55, 150, 1, "Housing", false));
+        bills.Add(new Bill(4, 1, DateTime.Now, DateTime.Now, 55, 150, 1, "Water", false));
     }
 
     private void RedirectToViewBill(int id)
