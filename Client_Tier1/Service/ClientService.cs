@@ -22,18 +22,6 @@ public class ClientService : IClientService
         return desirableValue;
     }
 
-    public async Task<List<bool>> GetSubscriptionsById(int clientid)
-    {
-        string dataAsJson = JsonSerializer.Serialize(clientid);
-        StringContent content = new(dataAsJson, Encoding.UTF8, "application/json");
-        
-        HttpResponseMessage responseMessage = await client.PostAsync("http://localhost:8090/client/getBills", content);
-        string responseContent = await responseMessage.Content.ReadAsStringAsync();
-
-        List<bool> desirableValue = JsonSerializer.Deserialize<List<bool>>(responseContent)!;
-        return desirableValue;
-    }
-
     public async Task RegisterAsync(ClientCreation client)
     {
         string userAsJson = JsonSerializer.Serialize(client);
