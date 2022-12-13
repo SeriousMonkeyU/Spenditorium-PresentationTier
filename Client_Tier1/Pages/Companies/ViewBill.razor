@@ -22,7 +22,7 @@
     <div class="bill-item even-coloring">
         <span class="bill-item-category text-color">
             <div>Current market price: </div>
-            <div>@bill.priceperitem dkk per @companyUnit</div>
+            <div>@bill.priceperitem dkk/@companyUnit</div>
         </span>
     </div>
     <div class="bill-item even-coloring">
@@ -68,7 +68,10 @@
 
     // Here should be method to request bills----------------------------
 
-        bills.Add(bill = new Bill(1, 1, DateTime.Now, DateTime.Now, 55, 150, 1, "Electricity", false));
+        bills.Add(bill = new Bill(1, 1, DateTime.Now, DateTime.Now, 55, 55, 1, "Electricity", false));
+        bills.Add(bill = new Bill(2, 1, DateTime.Now, DateTime.Now, 55, 55, 1, "Heating", false));
+        bills.Add(bill = new Bill(3, 1, DateTime.Now, DateTime.Now, 1, 150, 150, "Housing", false));
+        bills.Add(bill = new Bill(4, 1, DateTime.Now, DateTime.Now, 55, 55, 1, "Water", false));
 
     // After getting the bills----------------------------
 

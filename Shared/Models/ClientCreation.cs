@@ -10,7 +10,7 @@ public class ClientCreation
     public string name { get; }
     public string email { get; }
     public string dob { get; }
-    public string phoneNumber { get; }
+    public string phonenumber { get; }
     public List<Bill> bills { get; }
     public bool[] suscriptions { get; } // 0 - Electricity, 1 - Heating, 2 - Housing, 3 - Water
 
@@ -22,7 +22,7 @@ public class ClientCreation
         this.name = name;
         this.email = email;
         this.dob = dob;
-        this.phoneNumber = phoneNumber;
+        this.phonenumber = phoneNumber;
         this.suscriptions = new bool[4];
         this.suscriptions = subscriptions;
         this.bills = new List<Bill>();
@@ -30,6 +30,6 @@ public class ClientCreation
 
     public override String ToString()
     {
-        return username + " " + password + " " + name + " " + email + " " + dob + " " + phoneNumber + " " + suscriptions[0] + " " + suscriptions[1] + " " + suscriptions[2] + " " + suscriptions[3] + " " + bills;
+        return username + " " + password + " " + name + " " + email + " " + dob + " " + phonenumber + " " + suscriptions[0] + " " + suscriptions[1] + " " + suscriptions[2] + " " + suscriptions[3] + " " + bills;
     }
 }
