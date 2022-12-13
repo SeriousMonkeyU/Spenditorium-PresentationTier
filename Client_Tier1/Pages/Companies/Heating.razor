@@ -3,65 +3,84 @@
 @using Client_Tier1.Service
 @inject IClientService _clientService
 @inject NavigationManager nav;
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
 
-<div class="mainHolder">
-    <h3>@CompanyName</h3>
-    <br>
-    <table class="bills">
-        <thead>
-        <tr>
-            <th>Billing number</th>
-            <th>Billing date</th>
-            <th>Due date</th>
-            <th>Usage</th>
-            <th>Price per unit</th>
-            <th>Total to pay</th>
-            <th>Is payed</th>
-        </tr>
-        </thead>
-        <tbody>
-        @foreach (var item in bills)
-        {
-            <tr @onclick="()=>RedirectToViewBill(item.id)">
-                <td>№ @item.id</td>
-                <td>@item.billingdate.Date.ToString("d")</td>
-                <td>@item.duedate.Date.ToString("d")</td>
-                <td>@item.amount</td>
-                <td>@item.priceperitem</td>
-                <td>@item.total dkk</td>
-                <td>@item.paidstatus</td>
+@if (isSubscribed)
+{
+    <div class="mainHolder">
+        <h3>@CompanyName.ToUpper()</h3>
+        <br>
+        <table class="bills">
+            <thead>
+            <tr>
+                <th>Billing number</th>
+                <th>Billing date</th>
+                <th>Due date</th>
+                <th>Usage</th>
+                <th>Price per unit</th>
+                <th>Total to pay</th>
+                <th>Is payed</th>
             </tr>
-        }
-        </tbody>
-    </table>
-    <button type="button" id="refresh" onclick="@Refresh">Refresh</button>
-</div>
+            </thead>
+            <tbody>
+            @foreach (var item in bills)
+            {
+                <tr @onclick="()=>RedirectToViewBill(item.id)">
+                    <td>№ @item.id</td>
+                    <td>@item.billingdate.Date.ToString("d")</td>
+                    <td>@item.duedate.Date.ToString("d")</td>
+                    <td>@item.amount</td>
+                    <td>@item.priceperitem</td>
+                    <td>@item.total dkk</td>
+                    <td>@item.paidstatus</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+}
+
+@if (isSubscribed == false)
+{
+    <div class="mainHolder">
+        <div>
+            We are sorry, but unfortunetally,
+            you are not subscribed to that provider, or
+            you do not have bills to pay... yet?
+        </div>
+    </div>
+}
 
 @code {
+    
+    private int id { get; set; } = -1;
+        private const string idName = "id";
+    
+    // -----------------------------------------------
+    
+    private bool isSubscribed = false;
 
     private bool collapseAuthorize = true;
     private string? TopMenuCssClass => collapseAuthorize ? "collapse" : null;
     
-    private string CompanyName { get; set; } = "Heating";
+    private string CompanyName { get; set; } = "heating";
 
     private List<Bill> bills = new List<Bill>();
 
-    private void Refresh()
-    {
-        bills.Add(new Bill(1, 1, DateTime.Now, DateTime.Now, 32424, 50, 1, "Heating", true));
-    }
-
     private void RedirectToViewBill(int id)
     {
+        string tempParam = new(CompanyName + "/" + id);
         nav.NavigateTo($"/ViewBill/{id.ToString()}");
     }
     
-    /*
+    
     protected override async Task OnInitializedAsync()
     {
-        // Gets id from claims, and Company name "Electricity" to parse it to "GetBillsById" and return a list of bills
-        bills = await _clientService.GetBillsByUsername(JsonSerializer.Deserialize<string>(_authService.GetAuthAsync().Result.FindFirst("id")?.Value), "Electricity");
+        id = await localStorage.GetItemAsync<int>(idName);
+        bills = await _clientService.GetBillsById(id, CompanyName);
+        
+        if (bills is null) isSubscribed = false;
+        if (bills is not null) isSubscribed = true;
     }
-*/
 
 }

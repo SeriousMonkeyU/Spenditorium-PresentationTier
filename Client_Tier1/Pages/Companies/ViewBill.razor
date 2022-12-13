@@ -1,5 +1,8 @@
 @page "/ViewBill/{parameter}"
 @using global::Shared.Models
+@using Client_Tier1.Service
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
+@inject IClientService _clientService
 
 <div class="mainHolder">
     <div class="bill-header">
@@ -45,40 +48,47 @@
             <div>@bill.paidstatus</div>
         </span>
     </div>
-
 </div>
 
 
 @code {
 
+    private int id { get; set; } = -1;
+        private const string idName = "id";
+
+    // -----------------------------------------------
+
     [Parameter]
     public string? parameter { get; set; }
 
-    private int id { get; set; }
 
-    private List<Bill> bills = new List<Bill>();
+    private int billId { get; set; }
+    private string companyname { get; set; }
+    private List<Bill> bills { get; set; }
     private Bill bill;
 
     private string companyUnit = "";
 
-    protected override void OnInitialized()
+    protected override async Task OnInitializedAsync()
     {
-        base.OnInitialized();
+        try
+        {
+            int index = parameter.IndexOf("/");
+            companyname = parameter.Substring(0, index);
+            billId = int.Parse(parameter.Substring(index, parameter.Length));
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
 
-
-    // Here should be method to request bills----------------------------
-
-        bills.Add(bill = new Bill(1, 1, DateTime.Now, DateTime.Now, 55, 55, 1, "Electricity", false));
-        bills.Add(bill = new Bill(2, 1, DateTime.Now, DateTime.Now, 55, 55, 1, "Heating", false));
-        bills.Add(bill = new Bill(3, 1, DateTime.Now, DateTime.Now, 1, 150, 150, "Housing", false));
-        bills.Add(bill = new Bill(4, 1, DateTime.Now, DateTime.Now, 55, 55, 1, "Water", false));
-
-    // After getting the bills----------------------------
+        id = await localStorage.GetItemAsync<int>(idName);
+        bills = await _clientService.GetBillsById(id, companyname);
 
         try
         {
-            id = int.Parse(parameter);
-            bill = bills[id - 1];
+            bill = bills[billId - 1];
 
             switch (bill.provider)
             {

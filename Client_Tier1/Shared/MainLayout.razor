@@ -13,3 +13,15 @@
         </article>
     </main>
 </div>
+
+@code
+{
+    
+    // Simple implementation of authorise state
+    private bool _authorised = false;
+
+    private void HandleAuthorisedStatus(bool authorised)
+    {
+        _authorised = authorised;
+    }
+}

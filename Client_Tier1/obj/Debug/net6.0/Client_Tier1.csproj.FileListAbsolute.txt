@@ -1703,3 +1703,7 @@ C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tie
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\obj\Debug\net6.0\scopedcss\Pages\Companies\Housing.razor.rz.scp.css
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\obj\Debug\net6.0\scopedcss\Pages\Companies\Water.razor.rz.scp.css
 C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\obj\Debug\net6.0\scopedcss\Pages\Companies\ViewBill.razor.rz.scp.css
+C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\bin\Debug\net6.0\wwwroot\_framework\Blazored.LocalStorage.dll
+C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\bin\Debug\net6.0\wwwroot\_framework\Blazored.LocalStorage.dll.gz
+C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\bin\Debug\net6.0\Blazored.LocalStorage.dll
+C:\Denmark studies\3rd semester\Spenditorium\GitCode\PresentationTier\Client_Tier1\obj\Debug\net6.0\build-gz\NP5PwzJp.gz

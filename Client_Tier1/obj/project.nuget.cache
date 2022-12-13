@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "f+7E245p/i+q+iy4zbSR8wxrzDApiAyEeXTpOftlZpFxPRbay4nQqRxrzmXPGDheF9IM+SDmAwsaDOeSfvaP1g==",
+  "dgSpecHash": "bBcrBaMmBHbMfwmiNs0+5SXciDQBBOcpnhtonEP2pZUT9rQYx2uJ6aAJmrFV6h+n3iUQ+cDENSQpdDK1bsx1xQ==",
   "success": true,
   "projectFilePath": "C:\\Denmark studies\\3rd semester\\Spenditorium\\GitCode\\PresentationTier\\Client_Tier1\\Client_Tier1.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\berab\\.nuget\\packages\\blazored.localstorage\\4.3.0\\blazored.localstorage.4.3.0.nupkg.sha512",
     "C:\\Users\\berab\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.11\\microsoft.aspnetcore.authorization.6.0.11.nupkg.sha512",
     "C:\\Users\\berab\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.11\\microsoft.aspnetcore.components.6.0.11.nupkg.sha512",
     "C:\\Users\\berab\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\6.0.11\\microsoft.aspnetcore.components.analyzers.6.0.11.nupkg.sha512",
