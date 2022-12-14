@@ -78,6 +78,10 @@
                 await localStorage.SetItemAsync(idName, -1);
                 error = "Invalid login credentials";
             }
+            if (tempId == -2)
+            {
+                error = "Error when trying to login";
+            }
         }
         else error = "Invalid login credentials";
     }
