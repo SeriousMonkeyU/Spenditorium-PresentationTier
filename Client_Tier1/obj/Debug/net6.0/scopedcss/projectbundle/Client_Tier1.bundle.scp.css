@@ -184,6 +184,21 @@ th[b-cplwvizjc0] {
 {
     color: #1c1c1c;
 }
+
+.buttonHolder[b-zuk7msvaon]
+{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #457B9D;
+
+}
+
+.button[b-zuk7msvaon]
+{
+    padding: 1rem;
+    color: white;
+}
 /* /Pages/Companies/Water.razor.rz.scp.css */
 .mainHolder[b-0chmhzq9jo] {
     padding: 2rem 4rem 4rem;
@@ -238,6 +253,12 @@ th[b-0chmhzq9jo] {
     background-color: #F1FAEE;
     height: 100rem;
     border-radius: 10px;
+}
+
+.leftAlignment[b-fv7a5lpsma]
+{
+    text-align: justify;
+    text-justify: inter-word;
 }
 /* /Pages/Register.razor.rz.scp.css */
 .mainHolder[b-5t8cvge0o1]

@@ -7,3 +7,9 @@
     height: 100rem;
     border-radius: 10px;
 }
+
+.leftAlignment
+{
+    text-align: justify;
+    text-justify: inter-word;
+}

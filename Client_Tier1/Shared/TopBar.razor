@@ -65,7 +65,7 @@
         if (Username.Length > 3 && Username.Length < 16 && Password.Length > 3 & Password.Length < 16)
         {
             int tempId = await _clientService.LoginAsync(Username, Password);
-            if (tempId != -1)
+            if (tempId > 0) 
             {
                 await localStorage.SetItemAsync(authStateName, true);
                 await localStorage.SetItemAsync(idName, tempId);
@@ -78,7 +78,7 @@
                 await localStorage.SetItemAsync(idName, -1);
                 error = "Invalid login credentials";
             }
-            if (tempId == -2)
+            if (tempId < 0)
             {
                 error = "Error when trying to login";
             }
