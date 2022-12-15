@@ -48,3 +48,18 @@
 {
     color: #1c1c1c;
 }
+
+.buttonHolder
+{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #457B9D;
+
+}
+
+.button
+{
+    padding: 1rem;
+    color: white;
+}
