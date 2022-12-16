@@ -56,7 +56,14 @@
     color: gainsboro;
 }
 
-.errorLabel
+.error
 {
     color: red;
+    text-shadow: 2px 1px darkred;
+}
+
+.success
+{
+    color: forestgreen;
+    text-shadow: 2px 1px darkgreen;
 }

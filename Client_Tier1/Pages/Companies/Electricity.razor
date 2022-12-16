@@ -56,7 +56,7 @@
 
     private bool isSubscribed = false;
 
-    private List<Bill> bills { get; set; }
+    private List<Bill> bills { get; set; } = new List<Bill>();
 
     private bool collapseAuthorize = true;
     private string? TopMenuCssClass => collapseAuthorize ? "collapse" : null;
@@ -65,20 +65,20 @@
 
     private void RedirectToViewBill(int id)
     {
-        string tempParam = new(CompanyName + "/" + id);
+        string tempParam = new(CompanyName + "_" + id);
         nav.NavigateTo($"/ViewBill/{tempParam}");
     }
 
 
     protected override async Task OnInitializedAsync()
     {
+        bills = new List<Bill>();
         id = await localStorage.GetItemAsync<int>(idName);
-
-
+        
         bills = await _clientService.GetBillsById(id, CompanyName);
 
-        if (bills is null) isSubscribed = false;
-        if (bills is not null) isSubscribed = true;
+        if (bills[0] is null || bills is null) isSubscribed = false;
+        else isSubscribed = true;
     }
 
 

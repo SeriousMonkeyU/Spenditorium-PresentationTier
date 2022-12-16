@@ -1,6 +1,41 @@
 @page "/Profile"
-<h3>Profile</h3>
+@using Client_Tier1.Service
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
+@inject IClientService _clientService
+
+<div class="mainHolder">
+    <h3>Profile page</h3>
+    
+    <div class="clientInfo">
+        <div class="clientInfo-item">Full name: Administratively Accessed User</div>
+        <div class="clientInfo-item">Email: admin@admin.net</div>
+        <div class="clientInfo-item">Birthday: 99/99/9999</div>
+        <div class="clientInfo-item">Phone number: +459145****</div>
+        <div class="clientInfo-item">Address: NaN</div>
+        <br/>
+        <div class="clientInfo-item">Username: admin</div>
+        <div class="clientInfo-item">Password: *****</div>
+    </div>
+    
+    <br/>
+    <br/>
+    
+    <div class="clientInfo">
+        <div class="clientInfo-item"> Added payment methods: <div class="card">Mastercard card</div></div>
+    </div>
+
+</div>
 
 @code {
+
+    private int clientId { get; set; }
+        private const string clientIdName = "id";
+
+    protected override async Task OnInitializedAsync()
+    {
+        await localStorage.GetItemAsync<int>(clientIdName);
+        
+        // There is a method to get client information using _clientService and display(update) it to html
+    }
     
 }

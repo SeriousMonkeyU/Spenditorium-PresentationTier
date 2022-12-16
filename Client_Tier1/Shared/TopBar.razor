@@ -18,7 +18,8 @@
                 <div class="buttonAuthorised" type="button" onclick="@TryLogin">Log In</div>
                 <div class="buttonAuthorised" type="button" onclick="@RedirectToRegister">Sign Up</div>
             </div>
-            <p class="errorLabel">@error</p>
+            <p class="error">@error</p>
+            <p class="success">@success</p>
         </div>
     </div>
 }
@@ -52,6 +53,7 @@
     private string Password = "";
 
     private string error { get; set; } = "";
+    private string success { get; set; } = "";
 
 
     private void ToggleNavMenu()
@@ -60,15 +62,20 @@
     }
 
     // Method makes a request to Business logic and adjusts Auth variables
+    // If the return id is negative, it means the was an error trying to get client ID (unsuccessful login)
+    // Id cannot be 0 as well
     private async void TryLogin()
     {
         if (Username.Length > 3 && Username.Length < 16 && Password.Length > 3 & Password.Length < 16)
         {
             int tempId = await _clientService.LoginAsync(Username, Password);
-            if (tempId > 0) 
+            if (tempId > 0)
             {
+                error = "";
+                success = "User logged in successfully";
                 await localStorage.SetItemAsync(authStateName, true);
                 await localStorage.SetItemAsync(idName, tempId);
+                await Task.Delay(3000);
                 ToggleNavMenu();
                 nav.NavigateTo($"/", forceLoad: true);
             }
@@ -91,6 +98,7 @@
     {
         await localStorage.SetItemAsync<int>(idName, id);
         await localStorage.SetItemAsync<bool>(authStateName, false);
+        await localStorage.ClearAsync();
         nav.NavigateTo($"/", forceLoad: true);
     }
 

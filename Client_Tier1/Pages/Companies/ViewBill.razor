@@ -48,21 +48,18 @@
             <div>@bill.paidstatus</div>
         </span>
     </div>
-
-    <div class="buttonHolder">
-        <p>Card Number: </p>
-        <input type="text">
-        <p>Card Name: </p>
-        <input type="text">
-        <p>CCV: </p>
-        <input type="text">
-        <div type="button" class="payButton" onclick="@TryPayment">Pay the bill</div>
-    </div>
+    @if (bill.paidstatus == false)
+    {
+        <div class="buttonHolder">
+            <div type="button" class="payButton" onclick="@TryPayment">Pay the bill</div>
+        </div>
+    }
 </div>
 
 
 @code {
 
+    // Client Id
     private int id { get; set; } = -1;
         private const string idName = "id";
 
@@ -71,10 +68,9 @@
     [Parameter]
     public string? parameter { get; set; }
 
-
-    private int billId { get; set; }
     private string companyname { get; set; }
-    private List<Bill> bills { get; set; }
+    private int billId { get; set; }
+    private List<Bill> bills { get; set; } = new List<Bill>();
     private Bill bill;
 
     private string companyUnit = "";
@@ -83,9 +79,20 @@
     {
         try
         {
-            int index = parameter.IndexOf("/");
+            // Get and set parsed data (name of the company and the bill id to view)
+            int index = parameter.IndexOf("_");
             companyname = parameter.Substring(0, index);
-            billId = int.Parse(parameter.Substring(index, parameter.Length));
+            billId = int.Parse(parameter.Substring(index + 1));
+            
+            // Get all bills with parsed provider and Client id stored in local memory
+            id = await localStorage.GetItemAsync<int>(idName);
+            bills = await _clientService.GetBillsById(id, companyname);
+            
+            // Get the right bill to view
+            for (int i = 0; i < bills.Count; i++)
+            {
+                if (bills[i].id == billId) bill = bills[i];
+            }
         }
         catch (Exception e)
         {
@@ -93,9 +100,7 @@
             throw;
         }
 
-        id = await localStorage.GetItemAsync<int>(idName);
-        bills = await _clientService.GetBillsById(id, companyname);
-
+        // Decides which unit is to be displayed based on company name
         try
         {
             bill = bills[billId - 1];

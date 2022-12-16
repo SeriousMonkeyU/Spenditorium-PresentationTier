@@ -51,15 +51,20 @@
 
 .buttonHolder
 {
-    padding: 1rem;
+    text-align: center;
+    padding: 0.5rem;
     display: flex;
     flex-direction: column;
     background-color: #457B9D;
-
+    border-radius: 5rem;
 }
 
-.button
+.buttonHolder:hover
 {
-    padding: 1rem;
+    background-color: rgba(69, 123, 157, 0.8);
+}
+
+.payButton
+{
     color: white;
 }
