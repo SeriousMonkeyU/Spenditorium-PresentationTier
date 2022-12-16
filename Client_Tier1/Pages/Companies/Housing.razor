@@ -16,8 +16,6 @@
                 <th>Billing number</th>
                 <th>Billing date</th>
                 <th>Due date</th>
-                <th>Usage</th>
-                <th>Price per unit</th>
                 <th>Total to pay</th>
                 <th>Is payed</th>
             </tr>
@@ -29,8 +27,6 @@
                     <td>№ @item.id</td>
                     <td>@item.billingdate.Date.ToString("d")</td>
                     <td>@item.duedate.Date.ToString("d")</td>
-                    <td>@item.amount</td>
-                    <td>@item.priceperitem</td>
                     <td>@item.total dkk</td>
                     <td>@item.paidstatus</td>
                 </tr>
@@ -62,22 +58,20 @@
 
     private string CompanyName { get; set; } = "housing";
 
-    private List<Bill> bills = new List<Bill>();
+    private List<Bill> bills { get; set; } = new List<Bill>();
 
     private void RedirectToViewBill(int id)
     {
-        string tempParam = new(CompanyName + "/" + id);
-        nav.NavigateTo($"/ViewBill/{id.ToString()}");
+        string tempParam = new(CompanyName + "_" + id);
+        nav.NavigateTo($"/ViewBill/{tempParam}");
     }
 
     protected override async Task OnInitializedAsync()
     {
         id = await localStorage.GetItemAsync<int>(idName);
-
         bills = await _clientService.GetBillsById(id, CompanyName);
 
-        if (bills is null) isSubscribed = false;
-        if (bills is not null) isSubscribed = true;
+        if (bills[0] is null || bills is null) isSubscribed = false;
+        else isSubscribed = true;
     }
-
 }

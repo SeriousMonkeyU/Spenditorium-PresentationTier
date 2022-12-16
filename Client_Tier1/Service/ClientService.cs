@@ -22,7 +22,7 @@ public class ClientService : IClientService
         return desirableValue;
     }
 
-    public async Task RegisterAsync(ClientCreation client)
+    public async Task<bool> RegisterAsync(ClientCreation client)
     {
         string userAsJson = JsonSerializer.Serialize(client);
         StringContent content = new(userAsJson, Encoding.UTF8, "application/json");
@@ -31,8 +31,10 @@ public class ClientService : IClientService
         
         if (!response.IsSuccessStatusCode)
         {
-            throw new Exception(responseContent);
+            return false;
         }
+
+        return true;
     }
 
     public async Task<int> LoginAsync(string username, string password)

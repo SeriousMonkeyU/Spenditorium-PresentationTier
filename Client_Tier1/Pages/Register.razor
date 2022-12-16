@@ -29,7 +29,8 @@
         </div>
         <br/>
         <button id="Register" @onclick="TryRegistration" class="Btn" IsToggle="false">Sign Up</button>
-        <label for="Register">@error</label>
+        <label for="Register" class="error">@error</label>
+        <label for="Register" class="success">@success</label>
     </div>
 </div>
 
@@ -46,6 +47,7 @@
     private bool[] subscriptions = new bool[4]; // 0 - Electricity, 1 - Heating, 2 - Housing, 3 - Water
 
     private string error { get; set; } = "";
+    private string success { get; set; } = "";
 
     private async Task TryRegistration()
     {
@@ -55,9 +57,16 @@
             tempdob = Dob.ToString("MM/dd/yyyy");
             
             ClientCreation account = new ClientCreation(Username, Password, FName, Email, tempdob, Pn, new List<Bill>(),subscriptions);
-            error = account.ToString();
-            await _clientService.RegisterAsync(account);
-            //nav.NavigateTo($"/");
+            bool responseContent = await _clientService.RegisterAsync(account);
+
+            if (responseContent)
+            {
+                error = "";
+                success = "User successfully created";
+                await Task.Delay(3000);
+                nav.NavigateTo($"/", forceLoad: true);
+            }
+            else error = "Client with that username already exists";
         }
         else error = "Invalid input items";
     }

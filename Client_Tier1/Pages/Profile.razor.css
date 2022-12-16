@@ -1,0 +1,28 @@
+.mainHolder 
+{
+    padding: 2rem 4rem 4rem;
+    margin: 1rem 10% 10%;
+    text-align: left;
+    vertical-align: top;
+    background-color: #F1FAEE;
+    width: 80%;
+}
+
+.clientInfo
+{
+    border-radius: 10rem;
+    padding: 3rem;
+    background-color: rgba(69, 123, 157, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.clientInfo-item
+{
+    text-align: center;
+}
+
+.card
+{
+    width: fit-content;
+}
